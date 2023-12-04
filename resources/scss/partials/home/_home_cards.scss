@@ -1,0 +1,125 @@
+.home_cards{
+    
+    .container{
+        border-left: 1px solid $gray-color;
+        border-right: 1px solid $gray-color;
+        background-color: $white-color;
+
+        display: flex;
+        flex-wrap: wrap;
+       
+
+        #micro,
+        #financial,
+        #insurance{
+
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 2rem;
+            
+            div{
+                border: 1px solid #e8e8e8;
+                border-radius: 2rem;
+                padding: 3rem;
+                display: inline-block;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 65%;
+
+                img{
+                    display: inline-block;
+                    width: 12rem;
+                    margin-bottom: 1.3rem;
+                }
+
+                button{
+                    margin-top: 2rem;
+                }
+            }
+        }
+
+        #micro
+        {
+            div{
+                margin-left: 2.5rem;
+                p{
+                    color: $primary-color;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        #financial
+        {
+            div{
+                background-color: $gray-color;
+                p{
+                    color: $primary-color;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        #insurance
+        {
+            div{
+                margin-right: 2.5rem;
+                background-color: $primary-color;
+                p{
+                    color: $white-color;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .home_cards{
+        .container{
+            display: inline-block;
+            
+            #micro{
+                div{
+                    margin-top: 2rem;
+                }
+            }
+
+            #micro,
+            #financial,
+            #insurance{
+                div{
+                    width: 19rem;
+                    margin:auto;
+                    margin-bottom: 2rem;
+                }
+            }
+
+
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .home_cards{
+        .container{
+            #micro,
+            #financial,
+            #insurance{
+                div{
+                    width: 15rem;
+                }
+            }
+
+            #micro{
+                div{
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+}

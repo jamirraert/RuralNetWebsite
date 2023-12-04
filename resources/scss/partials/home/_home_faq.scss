@@ -1,0 +1,95 @@
+.home_faq{
+    .container{
+        border-left: 1px solid $gray-color;
+        border-right: 1px solid $gray-color;
+        background-color: $lightpink-color;
+        color: $primary-color;
+        display: flex;
+
+        #left{
+            width: 38%;
+            padding: 5rem;
+            
+            p:first-child {
+                font-size: 1.1rem;
+                font-weight: 700;
+                color: $orange-color;
+                margin-left: 4rem;
+            }
+
+            p:last-child {
+                font-size: 2.1rem;
+                font-weight: 700;
+                margin-left: 4rem;
+            }
+
+        }
+        
+        #right{
+            width: 60%;
+            padding: 5rem;
+
+            .accordion{
+                border: 1px solid $pink-color;
+                border-radius: 2rem;
+                background-color: $white-color;
+                padding: 3rem;
+
+                .accordion-item{
+                    border-bottom: 1px solid $pink-color;
+
+                    div:first-child {
+
+                        font-size: 1.3rem;
+                        font-weight: 600;
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 1rem 1rem 1rem 0;
+
+                        div{
+                            i{
+                                font-size: 1.5rem;
+                                color: $orange-color;
+                            }
+                            i:first-child {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    #accordion-item1, #accordion-item2, #accordion-item3, #accordion-item4, #accordion-item5{
+                        padding-bottom: 1rem;
+                        display: none;
+                    }
+                }
+            }
+        }   
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .home_faq{
+        .container{
+            display: block;
+           
+            
+            #left, #right{
+                margin: 0;
+                padding: 0;
+            }
+            #left{
+                width: auto;
+                padding-top: 3rem;
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+            }
+            #right{
+                width: auto;
+                padding-top: 3rem;
+                 padding-left: 1.5rem;
+                padding-right: 1.5rem;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}

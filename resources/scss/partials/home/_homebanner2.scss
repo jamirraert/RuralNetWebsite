@@ -1,0 +1,176 @@
+.home_banner2{
+    .container{
+        border-left: 1px solid $gray-color;
+        border-right: 1px solid $gray-color;
+        background-color: $primary-color;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        height: 20rem;
+        div{
+            padding: 4rem;
+            position: relative;
+            z-index: 1;
+
+            div{
+                padding: 0;
+                width: 40rem;
+               
+                p{
+                    top: 2rem;
+                    position: relative;
+                    font-size: 1.7rem;
+                    font-weight: 700;
+                    color: $orange-color;
+                    padding: 0;
+                    left: 5rem;
+                    z-index: 1;
+                    display: inline-block;
+                }
+                
+                img{
+                    height: 3rem;
+                    width: auto;
+                    position: absolute;
+                    bottom: -2rem;
+                    left: 17rem;
+                }
+            }
+            p{ 
+                position: absolute;
+                top: 12rem;
+                left: 9rem;
+                color: $white-color;
+                span{
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        img{
+            height: 20rem;
+            width: auto;
+            position: absolute;
+            right: 4rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1328px) {
+    .home_banner2{
+        .container{
+            height: 30rem;
+
+            img{
+                height: 17rem;
+                width: auto;
+                right: 3rem;
+                bottom: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .home_banner2{
+        .container{
+            height: 26rem;
+
+            div{
+                padding: 0rem;
+                div{
+                    padding: 0;
+                    width: 30rem;
+                   
+                    p{
+                        top: 2rem;
+                        position: relative;
+                        font-size: 1.7rem;
+                        font-weight: 700;
+                        color: $orange-color;
+                        padding: 0;
+                        left: 5rem;
+                        z-index: 1;
+                        display: inline-block;
+                    }
+                    
+                    img{
+                        height: 3rem;
+                        width: auto;
+                        position: absolute;
+                        bottom: 0.4rem;
+                        left: 26rem;
+                    }
+                }
+                p{ 
+                    position: absolute;
+                    top: 10rem;
+                    left: 5rem;
+                    color: $white-color;
+                    span{
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            img{
+                height: 13rem;
+                width: auto;
+                right: 3rem;
+                bottom: 0;
+            }
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .home_banner2{
+        .container{
+            height: 26rem;
+
+            div{
+                padding: 0rem;
+                div{
+                    padding: 0;
+                    width: 20rem;
+                   
+                    p{
+                        top: 2rem;
+                        position: relative;
+                        font-size: 1.7rem;
+                        font-weight: 700;
+                        color: $orange-color;
+                        padding: 0;
+                        left: 3rem;
+                        z-index: 1;
+                        display: inline-block;
+                    }
+                    
+                    img{
+                        height: 3rem;
+                        width: auto;
+                        position: absolute;
+                        bottom: -2rem;
+                        left: 2rem;
+                    }
+                }
+                p{ 
+                    position: absolute;
+                    top: 13rem;
+                    left: 3rem;
+                    color: $white-color;
+                    font-size: 0.9rem;
+                    span{
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            img{
+                height: 13rem;
+                width: auto;
+                right: 0rem;
+                bottom: 0;
+            }
+        }
+    }
+}

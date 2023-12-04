@@ -1,0 +1,19 @@
+/* general css */
+@import "./partials/config";
+@import "./partials/mixins";
+@import "./partials/general";
+@import "./partials/nav";
+@import "./partials/footer";
+@import "./partials/todo";
+
+/* home css */
+@import "./partials/home/banner";
+@import "./partials/home/home_section1";
+@import "./partials/home/home_cards";
+@import "./partials/home/home_social_impact";
+@import "./partials/home/homebanner2";
+@import  "./partials/home/home_faq";
+@import "./partials/home/home_banner3";
+
+
+

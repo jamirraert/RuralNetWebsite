@@ -1,0 +1,46 @@
+.section1{
+    width: 100%;
+    .container{
+        background-color: $white-color;
+        border-left: 1px solid $gray-color;
+        border-right: 1px solid $gray-color;
+        background: lighten($white-color, 8%);
+    
+        display: flex;
+
+        .section_left,
+        .section_right {
+            flex: 1;
+            padding:6rem;        
+        }
+
+        .section_left{
+            font-size: 1.7rem;
+            font-weight: 600;
+            color: $primary-color;
+        }
+
+        .section_right {
+            font-size: 1.08rem;
+            font-weight: 500;
+            color: $primary-color;
+        }
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section1{
+        .container{
+            display: inline-block;
+            
+            .section_left {
+                padding:3rem 2rem 0 2rem;        
+            }
+
+            .section_right {
+                padding:1.3rem 2rem 0 2rem;           
+            }
+        }
+    }
+}
