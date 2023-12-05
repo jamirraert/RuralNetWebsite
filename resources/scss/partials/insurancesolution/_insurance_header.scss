@@ -1,0 +1,127 @@
+.insurance_header{
+    .container{
+        border-left: 1px solid $gray-color;
+        border-right: 1px solid $gray-color;
+        display: flex;
+        background-color: $primary-color;
+        align-items: center;
+        padding-top: 5rem;
+        height: 18rem;
+        position: relative;
+        justify-content:start;
+
+        div{
+            width: 42rem;
+            color: $white-color;
+            z-index: 1;
+            p{
+                font-size: 2rem;
+                font-weight: 600;
+                padding-left: 22%;
+                z-index: 1;
+            }
+            span{
+                padding-top: 1rem;
+                display:inline-block;
+                font-size: 1.2rem;
+                padding-left: 22%;
+            }
+        }
+        img{
+            height: 32rem;
+            width: auto;
+            position: absolute;
+            top:7rem;
+            right: 0rem;
+            
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .insurance_header{
+        .container{
+            div{
+                width: 32rem;
+                p{
+                    padding-left: 7%;
+                    z-index: 1;
+                }
+                span{
+                    padding-top: 1rem;
+                    display:inline-block;
+                    font-size: 1.2rem;
+                    padding-left: 7%;
+                }
+            }
+            img{
+                height: 22rem;
+                width: auto;
+                position: absolute;
+                top:13rem;
+                right: 0rem;
+                
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 775px) {
+    .insurance_header{
+        .container{
+            div{
+                width: 25rem;
+                p{
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    padding-left: 7%;
+                    z-index: 1;
+                }
+                span{
+                    padding-top: 1rem;
+                    display:inline-block;
+                    font-size: 1rem;
+                    padding-left: 7%;
+                }
+            }
+            img{
+                height: 22rem;
+                width: auto;
+                position: absolute;
+                top:13rem;
+                right: 0rem;
+                
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .insurance_header{
+        .container{
+            div{
+                width: 25rem;
+                p{
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    padding-left: 7%;
+                    z-index: 1;
+                }
+                span{
+                    padding-top: 1rem;
+                    display:inline-block;
+                    font-size: 1rem;
+                    padding-left: 7%;
+                }
+            }
+            img{
+                height: 15rem;
+                width: auto;
+                position: absolute;
+                top:17rem;
+                right: 0rem;
+                
+            }
+        }
+    }
+}

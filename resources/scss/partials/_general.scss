@@ -35,6 +35,10 @@ section{
 .btn{
     @include button();
 }
+.btn_vdetail{
+    @include button_vdetail();
+}
+
 .btn_blue{
     @include button($white-color, $blue-color);
 }

@@ -1,0 +1,82 @@
+.insurance_use_cases_contents{
+    .container{
+        background-color: $lightpink-color;
+        border-left: 1px solid $gray-color;
+        border-right: 1px solid $gray-color;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        .accordion{
+            padding-bottom: 3rem;
+            .accordion-item{
+                
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                width: 60rem;
+                background-color: $white-color;
+                margin: 2rem;
+                padding: 2rem;
+                border: 1px solid $pink-color;
+                border-radius: 2rem;
+
+                div:first-child{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    p{
+                        font-size: 1.3rem;
+                        font-weight: 600;
+                        color: $primary-color;
+                    }
+                    div{
+                        .btn_vdetail{
+                            width: 11rem;
+                        }
+                    }
+                }
+
+                #accordion-item2{
+                    display: flex;
+                    color: $primary-color;
+                    padding: 2rem;
+                    justify-content: center;
+                    flex-direction: column;
+                    display: none;
+                }
+
+                #accordion-item3{
+                    display: flex;
+                    color: $primary-color;
+                    padding: 2rem;
+                    justify-content: center;
+                    flex-direction: column;
+                    display: none;
+                }
+
+                .accordion-content{
+                    display: none;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 1655px){
+    .insurance_use_cases_contents{
+        .container{
+            .accordion{
+                .accordion-item{
+                    width: 85%;
+                    margin: 1rem;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+    
+}

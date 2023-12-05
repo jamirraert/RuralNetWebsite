@@ -1,0 +1,93 @@
+.insurance_cards{
+    .container{
+        border-left: 1px solid $gray-color;
+        border-right: 1px solid $gray-color;
+        background-color: $darkgray-color;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content:space-around;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        position: relative;
+
+        hr{
+            border: 0.1rem solid $primary-color;
+            position: absolute;
+            top:10rem;
+            width:50%;
+            z-index: -1;
+        }
+        
+        #product_creation,
+        #digitalization,
+        #implementation{
+            
+            border: 1px solid $primary-color;
+            border-radius: 2rem;
+            width: 26%;
+            
+
+            div:first-child {
+                background-color: $blue-color;
+                padding: 2rem; 
+                align-items: center; 
+                text-align: center;  
+                border-top-right-radius: 2rem;
+                border-top-left-radius: 2rem;
+                color: $white-color;
+                height: 35%;
+
+                p:first-child {
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                    margin-bottom: 0.5rem;
+                }
+
+            }
+
+            div:nth-child(2) {
+                color: $primary-color;
+                padding: 2rem;
+                text-align: center;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1221px){
+    .insurance_cards{
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            hr{
+                display: none;
+            }
+
+            #product_creation,
+            #digitalization,
+            #implementation{
+                width: 50%;
+                margin-top: 0;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    .insurance_cards{
+        .container{
+            #product_creation,
+            #digitalization,
+            #implementation{
+                width: 80%;
+            }
+        }
+    }
+}
