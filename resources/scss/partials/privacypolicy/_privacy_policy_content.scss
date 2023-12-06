@@ -1,0 +1,90 @@
+.privacy_policy_content{
+    .container{
+        border-left: 1px solid $gray-color;
+        border-right: 1px solid $gray-color;
+        background-color: $white-color;
+        text-align: justify;
+        ul{
+            padding: 5rem;
+            color: $primary-color;
+
+            li{
+                font-weight: 500;
+                font-size: 1.4;
+            }
+
+            li.lead{
+                font-size: 1.8rem;
+                margin-bottom: 1rem;
+            }
+            li.desc{
+                margin-left: 2rem;
+                margin-bottom: 1.5rem;
+            }
+            li.child{
+                margin-bottom: 0.5rem;
+                margin-left: 2rem;
+            }
+            li.child-desc{
+                margin-bottom: 1rem;
+                margin-left: 3rem;
+            }
+
+            li.bullet-child{
+                list-style:disc;
+                margin-left: 5rem;
+            }
+            li:nth-child(22){
+                margin-bottom: 2rem;
+            }
+            li.child-desc-a{
+                margin-top: 1rem;
+                margin-left: 3rem;
+            }
+            li.bullet-child-a{
+                margin-left: 5rem;
+                list-style:disc;
+            }
+
+            li:nth-child(52){
+                margin-top: 2rem;
+            }
+            li:nth-child(53){
+                ul{
+                    margin: 0rem;
+                    padding: 0rem;
+                }
+            }
+            li.child-desc-b{
+                margin-left: 3rem;
+                margin-bottom: 1rem;
+            }
+            li.child-desc-c{
+                margin-left: 4rem;
+                margin-bottom: 1rem;
+            }
+            li.bullet-child-d{
+                margin-left: 5rem;
+                list-style:disc;
+            }
+            li:nth-child(80){
+                margin-bottom: 1rem;
+            }
+            li:nth-child(86){
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px){
+    .privacy_policy_content{
+        .container{
+            ul{
+                padding: 1rem;
+                margin-right: 1rem;
+                color: $primary-color;
+            }
+        }
+    }
+}
