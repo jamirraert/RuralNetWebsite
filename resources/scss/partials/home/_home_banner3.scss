@@ -1,191 +1,81 @@
 .home_banner3{
     .container{
+        border-left: 1px solid $gray-color;
+        border-right: 1px solid $gray-color;
         background-color: $blue-color;
+        
         display: flex;
-        justify-content:space-around;
-        height: 12rem;
-       
-        #hb3_left {
-            flex: 2;
-            display: flex;
+        justify-content: space-around;
 
-            div
-            {   
-                width: 43rem;
-                position: relative;
-                padding: 3rem;
-               
-                p:first-child{
-                   font-size: 1.5rem;
-                   font-weight: 600;
-                   color: $white-color;
-                   position: absolute;
-                   left: 9rem;
-                   
-                } 
-                img:nth-child(2){
-                    height: auto;
-                    width: 8rem;
-                    position: absolute;
-                    left: 9rem;
-                    top:4.5rem
-                } 
+        overflow: hidden;
 
-                img:nth-child(3){
-                    height: 7rem;
-                    width: auto;
-                    position: absolute;
-                    right: -5rem;
-                }   
+        #hb3_left{
+            width: 50%;
+            position: relative;
+            padding: 3rem;
+            margin-left: 1%;
+            
+            p{
+                color: $white-color;
+                font-size: 1.7rem;
+                font-weight: 600;
+                z-index: 1;
+            }
+
+            img:nth-child(2){
+                position: absolute;
+                top: 5rem;
+                left: 3rem;
+                width: 10rem;
+                height: auto;
+            }
+
+            img:nth-child(3){
+                position: absolute;
+                bottom: 2rem;
+                right: -1.7rem;
+                height: 8rem;
+                width: auto;
+        
             }
         }
-        
         #hb3_right{
-            flex: 1;
             display: flex;
-            justify-content: center;
+            justify-content:end;
             align-items: center;
-            button{
-                width: 16rem;
+            a{
+                width: fit-content;
             }
         }
-        
     }
 }
-@media screen and (max-width: 1366px){
+
+@media screen and (max-width: 1124px) {
     .home_banner3{
         .container{
+          
             display: block;
-            height: 16rem;
-
+            flex-direction: column;
+            justify-content:start;
             #hb3_left{
-                padding:0;
-                margin: 0;
-                
-                div{
-                    padding:0;
-                    margin: 0;
+                width: 70%;
+                padding-top: 3rem;
+                margin-left: 1%;
+            }
 
-                    p:first-child{
-                        top:2rem;
-                        left: 3rem;
-                    }
-
-                    img:nth-child(2){
-                        left: 3rem;
-                        top:3.5rem
-                    } 
+            #hb3_right{
+                display: flex;
+                justify-content:start;
+                align-items: center;
+                margin-left: 3rem;
+                margin-top: -2rem;
+                padding-bottom: 2rem;
+                a{
+                    width: fit-content;
+                }
+            }
+            
+        }
+    }
     
-                    img:nth-child(3){
-                        top: 3rem;
-                    }   
-                }
-            }
-            #hb3_right{
-                justify-content: start;
-                position: relative;
-               
-                button{
-                    position: absolute;
-                    top: 10rem;
-                    left: 3rem;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 900px){
-    .home_banner3{
-        .container{
-            display: block;
-            height: 16rem;
-
-            #hb3_left{
-                padding:0;
-                margin: 0;
-                
-                div{
-                    padding:0;
-                    margin: 0;
-
-                    p:first-child{
-                        top:2rem;
-                        left: 3rem;
-                    }
-
-                    img:nth-child(2){
-                        left: 3rem;
-                        top:3.5rem
-                    } 
-    
-                    img:nth-child(3){
-                        top: 3rem;
-                    }   
-                }
-            }
-            #hb3_right{
-                justify-content: start;
-                position: relative;
-                
-                button{
-                    position: absolute;
-                    top: 10rem;
-                    left: 3rem;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .home_banner3{
-        .container{
-            display: block;
-            height: 22rem;
-
-            #hb3_left{
-                padding:0;
-                margin: 0;
-                
-                div{
-                    
-                    padding:0;
-                    margin: 0;
-                    width: 100%;
-                    height: 15rem;
-                    background-color: $blue-color;
-
-                    p:first-child{
-                        display: block;
-                        padding:0;
-                        margin: 0;
-                        left: 2rem; 
-                        top:2rem;
-                        font-size: 1.3rem;
-                        font-weight: 600;
-                        z-index: 1;
-                    }
-
-                    img:nth-child(2){
-                        left: 2rem;
-                        top:3.5rem
-                    } 
-
-                    img:nth-child(3){
-                        right: 0;
-                        top: 9rem;
-                    }   
-                }
-            }
-
-            #hb3_right{
-                justify-content: start;
-                padding-left: 2rem;
-                button{
-                   top:0;
-                }
-            }
-        }
-    }
 }
