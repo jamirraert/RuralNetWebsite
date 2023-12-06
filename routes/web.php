@@ -19,3 +19,6 @@ Route::get('/', [RuralNetWebsiteController::class, 'home']);
 Route::get('/insurance_solutions', [RuralNetWebsiteController::class, 'insuranceSolution']);
 Route::get('/contact', [RuralNetWebsiteController::class, 'contact']);
 Route::get('/privacy_policy', [RuralNetWebsiteController::class, 'privacyPolicy']);
+
+Route::post('/send_email', [RuralNetWebsiteController::class, 'sendMailNow']);
+Route::get('/thank_you', [RuralNetWebsiteController::class, 'thankYou'])->name("thank_you");

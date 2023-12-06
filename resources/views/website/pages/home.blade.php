@@ -13,15 +13,16 @@
                 We provide the Philippines’ first fully digital 
                 & API-driven insurance distribution & claims management platform.
             </p>
-            <button class='btn_big'>LEARN MORE</button>    
+            <button class='btn_big' onclick="scrollToSection()">LEARN MORE</button>    
         </div>
         <img src="{{ asset('images/ruralnet-banner-right.png') }}" id="banner_right_img">
     </div>
 </div>
+
 <!----------------------------- end of banner --------------------->
 
 <div class="section1">
-    <div class="container">
+    <div class="container" id="section1_learn_more">
         <p class="section_left">    
             RuralNet is an Insurance Technology company that seeks to give every Filipino access to affordable insurance.
         </p>
@@ -68,7 +69,7 @@
                     platform allows you to fully digitize the 
                     insurance process and make it more accessible to consumers.
                 </p>
-                <button class='btn'>LEARN MORE</button>
+                <button onclick="window.location.href = '/insurance_solutions'" class='btn'>LEARN MORE</button>
             </div>    
             
         </div>
@@ -259,4 +260,14 @@
 
 <x-banner-send-message></x-banner-send-message>
 <!----------------------------- end of home_faq ---------------------> 
+<script>
+    function scrollToSection() {
+        var targetSection = document.getElementById('section1_learn_more');
+        if (targetSection) {
+            targetSection.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
 @endsection

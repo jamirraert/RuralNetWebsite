@@ -72,7 +72,7 @@
     <div class="container">
         <div>
             <p>Want to learn more about our solutions?</p>
-            <button class="btn">SEND US A MESSAGE</button>
+            <button class="btn" onclick="window.location.href = '/contact'">SEND US A MESSAGE</button>
         </div>
     </div>
 </div>

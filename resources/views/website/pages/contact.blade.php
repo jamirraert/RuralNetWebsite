@@ -19,7 +19,9 @@
     <div class="container">
         <p>Get in touch with us using the form below or by emailing <a href="mailto:support@ruralnet.ph">support@ruralnet.ph</a> to learn more about our online insurance platform.</p>
 
-        <form action="submit_form.php" method="post">
+        <form action="/send_email" method="post">
+            @csrf
+            
             <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
             <br>
         
@@ -28,8 +30,11 @@
         
             <input type="text" id="lastName" name="lastName" required placeholder="Last Name">
             <br>
-        
-            <input type="tel" id="mobileNumber" name="mobileNumber" pattern="[0-9]{11}" placeholder="e.g., 12345678901" required>
+            
+            <input type="text" id="email" name="email" required placeholder="Email Address">
+            <br>
+
+            <input type="tel" id="mobileNumber" name="mobileNumber" pattern="[0-9]{11}" maxlength="11" placeholder="e.g., 12345678901" required>
             <br>
         
             <input type="text" id="organization" name="organization" placeholder="Organization">
