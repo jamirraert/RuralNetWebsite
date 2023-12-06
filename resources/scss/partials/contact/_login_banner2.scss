@@ -1,0 +1,74 @@
+.login_banner2{
+    .container{
+        border-left: 1px solid $gray-color;
+        border-right: 1px solid $gray-color;
+        background-color: $blue-color;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: $white-color;
+        height: 30vh;
+
+        .contact_msg{
+            position: relative;
+            width: 46%;
+            p{
+                font-size: 1.6rem;
+                font-weight: 600;
+            }
+            img{
+                height: 5rem;
+                width: auto;
+                position: absolute;
+                bottom: -3rem;
+                right: -4rem;
+            }
+        }
+        .contact_info{
+            td.info_h {
+                width: 90px; /* Set the desired width */
+                font-weight: bold;
+            }           
+        }
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .login_banner2{
+        .container{
+           
+            display: block;
+            height: 40vh;
+            text-align: center;
+    
+            .contact_msg{
+                position: relative;
+                width: 90%;
+                padding: 2rem;
+                p{
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                }
+                img{
+                    position: absolute;
+                    bottom: -6rem;
+                    right: 2rem;
+                }
+            }
+            .contact_info{
+                width: 90%;
+                text-align: center;
+                         
+            }
+        }
+    } 
+}
+
+@media screen and (max-width: 1080px)  and (orientation: landscape) {
+    .login_banner2{
+        .container{
+            height: 65vh;
+        }
+    } 
+}

@@ -1,0 +1,85 @@
+.contact_content{
+    .container{
+        border-left: 1px solid $gray-color;
+        border-right: 1px solid $gray-color;
+        background-color: $white-color;
+
+        display: flex;
+        justify-content: space-around;
+        align-items:start;
+
+        color: $primary-color;
+
+        p{
+            padding: 3%;
+            font-size: 1.5rem;
+            font-weight: 600;
+            width: 30%;
+            margin-left: 3rem;
+            a{
+                color: $primary-color;
+            }
+        }
+        form{
+            padding: 3%;
+            width: 40%;
+            padding-right: 7%;
+            textarea, input{
+                padding: 1rem;
+                margin: 1rem;
+                width: 100%;
+                border: 2px solid $pink-color;
+                border-radius: 1rem;
+            }
+            button{
+              margin-left: 1rem;
+              width: 15rem;  
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .contact_content{
+        .container{
+            border-left: 1px solid $gray-color;
+            border-right: 1px solid $gray-color;
+            background-color: $white-color;
+    
+            display: block; //here
+            justify-content: space-around;
+            align-items:start;
+    
+            color: $primary-color;
+    
+            p{
+                padding: 3%;
+                font-size: 1.5rem;
+                font-weight: 600;
+                width: 80%;
+                margin-left: 1rem;
+                a{
+                    color: $primary-color;
+                }
+            }
+            form{
+                padding: 3%;
+                width: 80%;
+                padding-right: 7%;
+                textarea, input{
+                    padding: 1rem;
+                    margin: 1rem;
+                    width: 100%;
+                    border: 2px solid $pink-color;
+                    border-radius: 1rem;
+                }
+                button{
+                  margin-left: 1rem;
+                  width: 15rem;  
+                }
+                
+            }
+        }
+    }
+}
