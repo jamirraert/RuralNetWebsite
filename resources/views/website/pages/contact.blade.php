@@ -61,7 +61,7 @@
                 <table>
                     <tr>
                         <td class='info_h'>Email</td>
-                        <td>:support@ruralnet.ph</td>
+                        <td><a href="mailto:support@ruralnet.ph" style="color: #fff">:support@ruralnet.ph</a></td>
                     </tr>
                     <tr>
                         <td class='info_h'>Globe</td>

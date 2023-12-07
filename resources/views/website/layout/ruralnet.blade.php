@@ -36,7 +36,7 @@
             <div id="f_left">
                 <span>CONTACT US</span>
                 <div>
-                    <span>+63 345 678 903</span>
+                    <span>(028) 8761-428</span>
                     <span><a href="mailto:support@ruralnet.ph">support@ruralnet.ph</a></span>
             
                 </div>
