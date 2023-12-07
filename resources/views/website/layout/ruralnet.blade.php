@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RuralNet</title>
-    {{-- <link rel="stylesheet" href="{{ asset('build/assets/css/app.{hash}.css') }}"> --}}
+    {{-- <link rel="stylesheet" href="{{ asset('/build/assets/app-d24af13c.css.css') }}">  --}}
     <!-- Include the generated CSS file -->
     
     <!-- Boxicons CDN-->
@@ -37,7 +37,7 @@
                 <span>CONTACT US</span>
                 <div>
                     <span>+63 345 678 903</span>
-                    <span><a href="mailto:hello@ruralnet.ph">hello@ruralnet.ph</a></span>
+                    <span><a href="mailto:support@ruralnet.ph">support@ruralnet.ph</a></span>
             
                 </div>
              </div>
@@ -50,6 +50,7 @@
                 <span>© RuralNet</span>
             </div>
         </div>
-    </footer>    
+    </footer>   
+    {{-- <script src="{{ asset('/build/assets/app-23295724.js') }}"></script>  --}}
 </body>
 </html>

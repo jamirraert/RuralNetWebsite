@@ -127,7 +127,7 @@
                 <img src="{{ asset('images/CashKO_Accent-4.png') }}">
             </div>
             <p>
-                Learn more about our platform and <span>see what we can do for you</span>.
+                Learn more about our platform and <span><a href="/insurance_solutions" style="color: white">see what we can do for you</a></span>.
             </p>
         </div>
         <img src="{{ asset('images/banner-bg.png') }}"  class="right">
