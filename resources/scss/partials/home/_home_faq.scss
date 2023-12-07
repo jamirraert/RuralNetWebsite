@@ -5,6 +5,7 @@
         background-color: $lightpink-color;
         color: $primary-color;
         display: flex;
+        overflow: hidden;
 
         #left{
             width: 38%;
@@ -88,7 +89,26 @@
                 padding-top: 3rem;
                  padding-left: 1.5rem;
                 padding-right: 1.5rem;
-                margin-bottom: 3rem;
+                padding-bottom: 3rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .home_faq{
+        .container{
+           
+            #left{
+                padding-left: 0;
+                padding-right: 1.5rem;
+            }
+            #right{
+                width: auto;
+                padding-top: 3rem;
+                 padding-left: 1.5rem;
+                padding-right: 1.5rem;
+                padding-bottom: 3rem;
             }
         }
     }

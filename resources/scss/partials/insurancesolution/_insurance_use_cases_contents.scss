@@ -80,3 +80,18 @@
     }
     
 }
+
+@media screen and (max-width: 400px){
+    .insurance_use_cases_contents{
+        .container{
+            .accordion{
+                .accordion-item{
+                    width: 83%;
+                    margin: 1rem;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+    
+}
