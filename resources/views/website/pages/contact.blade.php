@@ -18,32 +18,40 @@
 <div class="contact_content">
     <div class="container">
         <p>Get in touch with us using the form below or by emailing <a href="mailto:support@ruralnet.ph">support@ruralnet.ph</a> to learn more about our online insurance platform.</p>
-
-        <form action="/send_email" method="post">
+        <form id="contact_enquiry">
             @csrf
-            
-            <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+            <div class="spinner-parent">
+                <div class="spinner-overlay">
+                     {{-- SPINNER --}}
+                    <div class="loading-spinner"></div>
+                </div>
+            </div>
+            <input type="text" id="firstName" name="firstName" placeholder="First Name" id="input" required>
             <br>
         
-            <input type="text" id="middleName" name="middleName" placeholder="Middle Name">
+            <input type="text" id="middleName" name="middleName" placeholder="Middle Name" id="input" required>
             <br>
         
-            <input type="text" id="lastName" name="lastName" required placeholder="Last Name">
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name" id="input" required>
             <br>
             
-            <input type="text" id="email" name="email" required placeholder="Email Address">
+            <input type="text" id="email" name="email" placeholder="Email Address" id="input" required>
             <br>
 
-            <input type="tel" id="mobileNumber" name="mobileNumber" pattern="[0-9]{11}" maxlength="11" placeholder="e.g., 12345678901" required>
+            <input type="tel" id="mobileNumber" name="mobileNumber" pattern="[0-9]{11}" id="input" maxlength="11" placeholder="e.g., 12345678901" required>
             <br>
         
-            <input type="text" id="organization" name="organization" placeholder="Organization">
+            <input type="text" id="organization" name="organization" placeholder="Organization" id="input" required>
             <br>
         
-            <textarea id="reasonForContacting" name="reasonForContacting" rows="4" placeholder="Reason for contacting RuralNet" required></textarea>
+            <textarea id="reasonForContacting" name="reasonForContacting" rows="4" id="input" placeholder="Reason for contacting RuralNet" required></textarea>
             <br>
         
-            <button type="submit" class="btn">Submit</button>
+            <button type="button" class="btn" id="submitForm">Submit</button>
+            <div class="contact-sweet-msg" id="sweet-msg">
+                <img src="{{ asset('images/sweet-msg.png') }}" alt="">
+                <span class="close-sweet-msg" id="close-sweet-msg">x</span>
+            </div>
         </form>
 
     </div>

@@ -7,6 +7,7 @@ use App\Mail\ContactEmail;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\URL;
 
 class RuralNetWebsiteController extends Controller
 {
@@ -31,7 +32,6 @@ class RuralNetWebsiteController extends Controller
     }
 
     public function sendMailNow(Request $request){
-
         $info = new stdClass();
         $info->fullname = $request->firstName;
         if(isset($request->middleName) && !empty($request->middleName)){
@@ -47,8 +47,15 @@ class RuralNetWebsiteController extends Controller
         $sendTo = "support@ruralnet.ph";
 
         $contact = new ContactEmail($info);
-        Mail::to($sendTo)->send($contact);
-        return redirect()->route('thank_you');
+        if(Mail::to($sendTo)->send($contact)) {
+            $response = response()->json(['success' => 'Successfully sent'], 200);
+            return $response->status();
+        }else {
+            $response = response()->json(['failed' => 'Something went wrong'], 201);
+            return $response->status();
+        }
+        // return redirect()->to(URL::current());
+        // return redirect()->route('thank_you');
     }
     
     public function thankYou()

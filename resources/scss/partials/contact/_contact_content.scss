@@ -24,6 +24,53 @@
             padding: 3%;
             width: 40%;
             padding-right: 7%;
+            position:relative;
+
+            .spinner-parent {
+                position:absolute;
+                top: 0;
+                left :0;
+                height: 100%;
+                width: 100%;
+                backdrop-filter: blur(0.1rem);
+                z-index: 999;
+                display: none;
+                .spinner-overlay {
+                    display: flex;
+                    height: 100%;
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            .contact-sweet-msg {
+                position: absolute;
+                bottom: 45%;
+                left: -20%;
+                height: 27vh;
+                width: 52%;
+                overflow: hidden;
+                border-radius: 1rem;
+                opacity: .9;
+                display: none;
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+                .close-sweet-msg {
+                    position: absolute;
+                    top: 0;
+                    right: 0.5rem;
+                    font-size: 25px;
+                    padding: 1.5%;
+                    font-weight: 700;
+                    cursor: pointer;
+                    &:hover {
+                        transform: scale(.90);
+                    }
+                }
+            }
             textarea, input{
                 padding: 1rem;
                 margin: 1rem;
@@ -77,6 +124,10 @@
                 button{
                   margin-left: 1rem;
                   width: 15rem;  
+                }
+
+                .contact-sweet-msg {
+                    left: 26%;
                 }
                 
             }
