@@ -11,10 +11,7 @@ var inputs = form.getElementsByTagName("input")
 document.addEventListener("DOMContentLoaded", function () {
 
     submitForm.addEventListener("click", async function (event) {
-        let isTrue = false;    
-
-
-        console.log(inputs);
+        let isTrue = false;
 
         for(var i = 0; i < inputs.length; i++) {
             if(inputs[i].value == '') {

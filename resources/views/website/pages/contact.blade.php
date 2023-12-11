@@ -26,25 +26,25 @@
                     <div class="loading-spinner"></div>
                 </div>
             </div>
-            <input type="text" id="firstName" name="firstName" placeholder="First Name" id="input" required>
+            <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
             <br>
         
-            <input type="text" id="middleName" name="middleName" placeholder="Middle Name" id="input" required>
+            <input type="text" id="middleName" name="middleName" placeholder="Middle Name" required>
             <br>
         
-            <input type="text" id="lastName" name="lastName" placeholder="Last Name" id="input" required>
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
             <br>
             
-            <input type="text" id="email" name="email" placeholder="Email Address" id="input" required>
+            <input type="text" id="email" name="email" placeholder="Email Address" required>
             <br>
 
-            <input type="tel" id="mobileNumber" name="mobileNumber" pattern="[0-9]{11}" id="input" maxlength="11" placeholder="e.g., 12345678901" required>
+            <input type="tel" id="mobileNumber" name="mobileNumber" pattern="[0-9]{11}" maxlength="11" placeholder="e.g., 12345678901" required>
             <br>
         
-            <input type="text" id="organization" name="organization" placeholder="Organization" id="input" required>
+            <input type="text" id="organization" name="organization" placeholder="Organization" required>
             <br>
         
-            <textarea id="reasonForContacting" name="reasonForContacting" rows="4" id="input" placeholder="Reason for contacting RuralNet" required></textarea>
+            <textarea id="reasonForContacting" name="reasonForContacting" rows="4" placeholder="Reason for contacting RuralNet" required></textarea>
             <br>
         
             <button type="button" class="btn" id="submitForm">Submit</button>
