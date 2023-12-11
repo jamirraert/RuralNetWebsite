@@ -239,4 +239,19 @@
 
 
 /* -----------------  MEDIA QUERIES (SMALL DEVICES) -------------- */
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 600px) {
+    .banner {
+       .container {
+        & > img {
+            height: 16rem !important;
+        }
+        div {
+            margin-top: 40rem !important;
+        }
+        #banner_right_img {
+            right: 2rem;
+            top: 64rem;
+        }
+       }
+    }
+}
