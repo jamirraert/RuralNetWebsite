@@ -243,14 +243,14 @@
     .banner {
        .container {
         & > img {
-            height: 16rem !important;
+            height: 19rem !important;
         }
         div {
             margin-top: 40rem !important;
         }
         #banner_right_img {
-            right: 2rem;
-            top: 64rem;
+            right: -1rem;
+            top: 62rem;
         }
        }
     }
