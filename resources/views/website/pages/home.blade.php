@@ -148,7 +148,7 @@
              <div class="accordion">
 
                 <!-- Accordion Item 1 -->
-                <div class="accordion-item" onclick="toggleAccordion('accordion-item1')">
+                <div class="accordion-item" id="accordion-item">
                     <div>
                         <p>Who is RuralNet?</p>
                         <div>
@@ -156,7 +156,7 @@
                             <i class='bx bx-chevron-down'></i>
                         </div>
                     </div>   
-                    <div id="accordion-item1" class="accordion-content">
+                    <div id="accordion-content" class="accordion-content">
                         RuralNet is an InsurTech company in the Philippines, offering the country's first fully digital and 
                         API-driven platform for insurance distribution and claims management. We collaborate with institutions 
                         to bring insurance within reach of all Filipinos, with a focus on underserved individuals and SMEs. 
@@ -165,7 +165,7 @@
                 </div>
         
                 <!-- Accordion Item 2 -->
-                <div class="accordion-item" onclick="toggleAccordion('accordion-item2')">
+                <div class="accordion-item" id="accordion-item">
                     <div>
                         <p>Do I need servers to use the RuralNet platform?</p>
                         <div>
@@ -173,7 +173,7 @@
                             <i class='bx bx-chevron-down'></i>
                         </div>
                     </div>
-                    <div id="accordion-item2" class="accordion-content">
+                    <div id="accordion-content" class="accordion-content">
                         The RuralNet platform is cloud-based, which means you don’t need to invest in equipment or infrastructure 
                         to use the platform. Our infrastructure team is ready to help you set up your own cloud instance, ensuring 
                         that all your customer’s data is kept secure and private.
@@ -181,7 +181,7 @@
                 </div>
         
                 <!-- Accordion Item 3 -->
-                <div class="accordion-item" onclick="toggleAccordion('accordion-item3')">
+                <div class="accordion-item" id="accordion-item">
                     <div>
                         <p>How do I partner with RuralNet to improve our microinsurance operations?</p>
                         <div>
@@ -189,14 +189,14 @@
                             <i class='bx bx-chevron-down'></i>
                         </div>
                     </div>
-                    <div id="accordion-item3" class="accordion-content">
+                    <div id="accordion-content" class="accordion-content">
                         If you have mass-market insurance distribution operations, RuralNet’s Partnership team can help you build a 
                         solution that’s right for you. Schedule a product demo through our Contact Us page.
                     </div>
                 </div>
         
                 <!-- Accordion Item 4 -->
-                <div class="accordion-item" onclick="toggleAccordion('accordion-item4')">
+                <div class="accordion-item" id="accordion-item">
                     <div>
                         <p>I have an existing legacy system. How can RuralNet help me migrate my data?</p>
                         <div>
@@ -204,14 +204,14 @@
                             <i class='bx bx-chevron-down'></i>
                         </div>
                     </div>
-                    <div id="accordion-item4" class="accordion-content">
+                    <div id="accordion-content" class="accordion-content">
                         RuralNet would be happy to help you clean up and migrate your existing data onto the RuralNet platform. Our 
                         dedicated project managers will ensure a smooth transition and onboarding process for your products. 
                     </div>
                 </div>
         
                 <!-- Accordion Item 5 -->
-                <div class="accordion-item" onclick="toggleAccordion('accordion-item5')">
+                <div class="accordion-item" id="accordion-item">
                     <div>
                         <p>I’m concerned about Data Privacy. How can RuralNet help me protect my clients’ data?</p>
                         <div>
@@ -219,7 +219,7 @@
                             <i class='bx bx-chevron-down'></i>
                         </div>
                     </div>
-                    <div id="accordion-item5" class="accordion-content">
+                    <div id="accordion-content" class="accordion-content">
                         RuralNet is a National Privacy Commission-registered institution and is fully compliant with the Data 
                         Privacy Act. Our platform keeps each partner’s data on a separate cloud instance, helping you keep your 
                         clients’ data segregated, encrypted, and secure.
@@ -227,30 +227,65 @@
                 </div>
             </div>
             <script>
-                function toggleAccordion(itemID) {
-                const item = document.getElementById(itemID);
-                const isOpen = item.style.display === 'block';
+                document.addEventListener('DOMContentLoaded', function() {
+                let accordionItems = document.querySelectorAll('#accordion-item');
+                let currentlyOpenItem = null;
 
-                const icons_up = item.previousElementSibling.querySelector('.bx-chevron-up');
-                const icons_down = item.previousElementSibling.querySelector('.bx-chevron-down');
+                accordionItems.forEach(function(element) {
+                    element.querySelector('#accordion-content').style.display = 'none';
 
-                // Close all accordion items
-                const allItems = document.querySelectorAll('.accordion-content');
-                allItems.forEach((itemloop) => {
-                    itemloop.style.display = 'none';
+                    element.addEventListener('click', function(event) {
+                        event.stopPropagation();
+
+                        let accordionContent = this.querySelector('#accordion-content');
+                        let chevUp = this.querySelector('.bx-chevron-up');
+                        let chevDown = this.querySelector('.bx-chevron-down');
+
+                        if (currentlyOpenItem && currentlyOpenItem !== this) {
+                            // Close the previously open item
+                            let prevAccordionContent = currentlyOpenItem.querySelector('#accordion-content');
+                            let prevChevUp = currentlyOpenItem.querySelector('.bx-chevron-up');
+                            let prevChevDown = currentlyOpenItem.querySelector('.bx-chevron-down');
+
+                            prevAccordionContent.style.display = 'none';
+                            prevChevUp.style.display = 'none';
+                            prevChevDown.style.display = 'block';
+                        }
+
+                        if (accordionContent.style.display === 'none') {
+                            accordionContent.style.display = 'block';
+                            chevUp.style.display = 'block';
+                            chevDown.style.display = 'none';
+                            currentlyOpenItem = this;
+                        } else {
+                            accordionContent.style.display = 'none';
+                            chevUp.style.display = 'none';
+                            chevDown.style.display = 'block';
+                            currentlyOpenItem = null;
+                        }
+                    });
                 });
 
-                // Toggle the clicked item
-                item.style.display = isOpen ? 'none' : 'block';
+                // hide content when clicking outside element
+                document.addEventListener('click', function(event) {
+                    const target = event.target;
 
-                if (isOpen) {
-                    icons_up.style.display = 'none';
-                    icons_down.style.display = 'block';
-                }else{
-                    icons_up.style.display = 'block';
-                    icons_down.style.display = 'none';
-                }
-            }
+                    if (!Array.from(accordionItems).some(item => item.contains(target))) {
+                        accordionItems.forEach(function(element) {
+                            let accordionContent = element.querySelector('#accordion-content');
+                            let chevUp = element.querySelector('.bx-chevron-up');
+                            let chevDown = element.querySelector('.bx-chevron-down');
+
+                            accordionContent.style.display = 'none';
+                            chevUp.style.display = 'none';
+                            chevDown.style.display = 'block';
+                        });
+
+                        currentlyOpenItem = null;
+                    }
+                });
+            });
+
             </script>
         </div>
     </div>
