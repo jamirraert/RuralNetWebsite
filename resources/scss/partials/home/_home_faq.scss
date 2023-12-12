@@ -113,3 +113,17 @@
         }
     }
 }
+
+@media screen and (max-width: 400px) {
+    .home_faq{
+        .container{
+           
+            #left{
+               & p:first-child {
+                text-align: center;
+                line-height: 2.5rem;
+               }
+            }
+        }
+    }
+}

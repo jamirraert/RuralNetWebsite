@@ -35,7 +35,7 @@
     <footer>
         <div class="container">
             <div id="f_left">
-                <span>CONTACT US</span>
+                <span><a href="/contact" style="color: #FE9202; cursor: pointer;">CONTACT US</a></span>
                 <div>
                     <span>(028) 8761-428</span>
                     <span><a href="mailto:support@ruralnet.ph">support@ruralnet.ph</a></span>
@@ -48,7 +48,7 @@
                     <i class='bx bxl-twitter' ></i>
                     <i class='bx bxl-facebook' ></i>
                 </div>
-                <span>© RuralNet</span>
+                <span><a href="/">© RuralNet</a></span>
             </div>
         </div>
     </footer>   
