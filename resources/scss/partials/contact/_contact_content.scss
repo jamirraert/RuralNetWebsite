@@ -111,13 +111,13 @@
                 }
             }
             form{
-                padding: 3%;
+                margin: 0 auto;
                 width: 80%;
-                padding-right: 7%;
+                padding: .5rem;
                 textarea, input{
                     padding: 1rem;
-                    margin: 1rem;
-                    width: 100%;
+                    margin: 1rem auto;
+                    width: 92%;
                     border: 2px solid $pink-color;
                     border-radius: 1rem;
                 }
