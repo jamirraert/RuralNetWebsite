@@ -33,7 +33,7 @@
             img:nth-child(3){
                 position: absolute;
                 bottom: 2rem;
-                right: -1.7rem;
+                right: 7rem;
                 height: 8rem;
                 width: auto;
         
@@ -73,6 +73,24 @@
                 a{
                     width: fit-content;
                 }
+            }
+            
+        }
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .home_banner3{
+        .container{
+          
+            display: block;
+            flex-direction: column;
+            justify-content:start;
+            #hb3_left{
+               & img:last-child {
+                right: 1rem !important;
+               }
             }
             
         }
