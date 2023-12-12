@@ -48,20 +48,16 @@
             
             .contact_banner{
                 color: $white-color;
-    
-                p:first-child{
-                    font-size: 2rem;
-                    font-weight: 600;
-                    margin-bottom: 2rem;
-                    padding-top: 3rem;
-                    padding-left: 3rem;
+                // text-align: center;
+                display:flex;
+                flex-direction: column;
+                justify-content: space-around;
+                padding: 2rem;
+                width: 85%;
+                & > p {
+                    padding: 0 !important;
+                    text-align: center;
                 }
-                p:nth-child(2){
-                    font-size: 1.3rem;
-                    padding-left: 3rem;
-                    margin-bottom: 2rem;
-                }
-                width: 90%;
             }
             
             img{
