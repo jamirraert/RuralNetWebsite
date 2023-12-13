@@ -1,77 +1,74 @@
 .insurance_contents{
-    .container{
-        border-left: 1px solid $gray-color;
-        border-right: 1px solid $gray-color;
-        background-color: $white-color;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 2rem;
-
-        div{
+    padding: 1rem;
+    color: $primary-color;
+    background: $white-color;
+        .contents-parent {
+            padding: .5rem;
+            width: 80;
+            margin: 0 auto;
             display: flex;
-            width: 75%;
-            position: relative;
-            margin-left: 6rem;
-            img{
-                position: absolute;
-                top: 0;
-                width: 8rem;
-                height: auto;
-                margin-right: 2rem;
-            }
-            div{
-                display: flex;
-                flex-direction: column;
-                padding: 2rem;
-                margin-left: 1rem;
+            justify-content: space-between;
 
-                p{
-                    margin-top: 1rem;
-                    color: $primary-color;
-                    font-size: 1.2rem;
-                    margin-left: 9rem;
+            .images {
+                width: 28%;
+                position: relative;
+                & > img {
+                    position: absolute;
+                    right:0;
+                    top: -1rem;
+                    height: 5rem;
+                    width: 5rem;
                 }
-
-                p:first-child{
+            }
+            .desc  {
+                width: 70%;
+                & > p {
+                    width: 73%;
+                }
+                & > p:not(:first-child) {
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                }
+                .desc-title {
                     font-size: 1.8rem;
                     font-weight: 700;
                 }
-
             }
         }
-    }
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 600px){
     .insurance_contents{
-        .container{
-           
-            div{
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-
-
-                width: 85%;
-                margin-left: 0;
-                padding-left: 0;
-                
-                img{
-                    position: static;
-                    display: block;
+        .contents-parent {
+            display: block;
+            .images, .desc {
+                width: 100%;
+                text-align: center;
+            }
+            .images {
+                margin-bottom: 1rem;
+                & > img {
+                    position:static;
+                    margin: 0 auto;
+                    height: 7rem;
+                    width: 7rem;
                 }
-                div{
-                    p{
-                        margin: 0
-                    }
-                    p:first-child{
-                     margin-bottom: 1rem;
-                    }
+            }
+            .desc {
+                width: 100%;
+                & > p {
+                    width: 100%;
+                }
+                & > p:not(:first-child) {
+                    font-size: 1.1rem;
+                    margin: 1.5rem auto;
+                }
+                .desc-title {
+                    font-size: 1.5rem;
+                    font-weight: 700;
                 }
             }
         }
     }
 }
+

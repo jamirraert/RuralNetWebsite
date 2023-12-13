@@ -86,28 +86,36 @@
     </div>
 </div>
 
-<div class="insurance_contents">
-    <div class="container">
-        <div>
-            <img src="{{ asset('images/ruralnet-solutions-icon-1.svg') }}"> 
-            <div>
-                <p>Stay up-to-date at all times</p>
+<div class="container">
+    <div class="insurance_contents">
+        <div class="contents-parent">
+            <div class="images">
+                <img src="{{ asset('images/ruralnet-solutions-icon-1.svg') }}">
+            </div>
+            <div class="desc">
+                <p class="desc-title">Stay up-to-date at all times</p>
                 <p>RuralNet’s platform makes it easy for branches to regularly update KPIs and give reports, allowing you to stay connected with what’s happening in your community.  </p>
                 <p>Our system notifies agents and branches once policies are up for renewal. Policies can be issued for real-time printing at any branch, or can be sent directly to users via e-mail. Furthermore, our APIs pull from existing customer data to make renewing, adding, or amending policies as seamless as possible.</p>
             </div>
         </div>
-        <div>
-            <img src="{{ asset('images/ruralnet-solutions-icon-2.svg') }}"> 
-            <div>
-                <p>Process applications and claims quickly </p>
+        <div class="contents-parent">
+            <div class="images">
+                <img src="{{ asset('images/ruralnet-solutions-icon-2.svg') }}">
+            </div>
+             
+            <div class="desc">
+                <p class="desc-title">Process applications and claims quickly </p>
                 <p>RuralNet’s application portal automatically validates customer information, while the claims portal allows users to directly scan and upload claims documents for easy filing.  </p>
                 <p>Customer information is automatically validated as they enroll, and our claims approval tools helps your team keep track of all ongoing claims. </p>
             </div>
         </div>
-        <div>
-            <img src="{{ asset('images/ruralnet-solutions-icon-3.svg') }}"> 
-            <div>
-                <p>Engage with more clients at less risk </p>
+        <div class="contents-parent">
+            <div class="images">
+                <img src="{{ asset('images/ruralnet-solutions-icon-3.svg') }}">
+            </div>
+             
+            <div class="desc">
+                <p class="desc-title">Engage with more clients at less risk </p>
                 <p>As the only Philippine InsureTech company to operate on a profit-sharing model, RuralNet securely maintains its own cloud platform and only charges broker’s commissions or platform fees. For financial institutions, this means less capital expenditure and more opportunities for customer outreach.</p>
             </div>
         </div>
