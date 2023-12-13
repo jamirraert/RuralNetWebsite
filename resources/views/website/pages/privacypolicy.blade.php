@@ -7,8 +7,8 @@
         <img src="{{ asset('images/CashKO_Hand-12.png') }}">
     </div>
 </div>
-<div class="privacy_policy_content">
-    <div class="container">
+<div class="container">
+    <div class="privacy_policy_content">
         <ul>
             <li class="lead">I.OBJECTIVE</li>
             <li class="desc">Data Privacy is both a business and regulatory requirement. RuralNet and CashKo Insurance Brokerage commit to safeguard all Personal Data under its custody and control. As such, it is imperative for its employees including contractors, partners and third parties contracted by RuralNet and CasKo Insurance Brokerage to implement adequate data protection measures across systems, applications and other components that are directly related to the collection; use, storage and transmission; retention; and disposal and destruction of Personal Data.</li>
@@ -133,20 +133,20 @@
             <li class="child-desc-b">1.1 An appropriate level of leadership and resources to support the leadership, who are accountable for the Privacy and Data Protection Program, shall be established. The level of leadership may include, as appropriate the creation of a senior governing body (e.g. committee), who will provide support and oversight function on the effective implementation of the Privacy and Data Protection Program.</li>
             <li class="child-desc-b">1.2 Designation of Data Privacy Officer (DPO) for RuralNet and CashKo Insurance Brokerage.</li>
             <li class="child-desc-c" style="text-decoration: underline">Data Privacy Officer (DPO)</li>
-            <li class="child-desc-c">The designated DPO will be the Information Security Officer. The DPO shall act independently in the performance of his or her functions and shall be given sufficient degree of autonomy.  The DPO shall assume the following roles:</li>
-            <li class="child-desc-c">Establish and sustain a privacy program at the Company</li>
-            <li class="child-desc-c">Maintain and supervise enforcement of the privacy policy.</li>
-            <li class="child-desc-c">Report to the RuralNet Top Management and Board of Directors on the status of the Privacy Program.</li>
-            <li class="child-desc-c">Monitor the legal and regulatory environment affecting the field staff, customers, contractors, vendors and third parties’ privacy.</li>
-            <li class="child-desc-c">Facilitate the development and establishment of privacy roles and responsibilities throughout the organization to ensure that privacy practices are communicated, understood and implemented.</li>
-            <li class="child-desc-c">Perform periodic assessments of privacy risk.</li>
-            <li class="child-desc-c">Sponsor or direct privacy control correction or improvement efforts when needed or the development and implementation of new privacy controls.</li>
-            <li class="child-desc-c">Review and process exception requests for the privacy policy.</li>
-            <li class="child-desc-c">Oversee the notification process required in the event of a breach in privacy</li>
-            <li class="child-desc-c">Maintain this Policy.</li>
-            <li class="child-desc-c">Facilitate the sharing of ideas, tools, procedures and approaches relating to privacy company-wide.</li>
-            <li class="child-desc-c">Ensure compliance by the Personal Information Controller (PIC) or Personal Information Processor (PIP) with the Philippine Data Privacy Act (PDPA), its IRR, issuances by the National Privacy Commission (NPC), and other applicable laws and regulations relating to privacy and data protection.</li>
-            <li class="child-desc-c">The opinion of the DPO must be given due weight. In case of disagreement and should the PIC or PIP choose not to follow the advice of the DPO, it is recommended as good practice to document the reasons therefore.
+            <li class="bullet-child-a">The designated DPO will be the Information Security Officer. The DPO shall act independently in the performance of his or her functions and shall be given sufficient degree of autonomy.  The DPO shall assume the following roles:</li>
+            <li class="bullet-child-a">Establish and sustain a privacy program at the Company.</li>
+            <li class="bullet-child-a">Maintain and supervise enforcement of the privacy policy.</li>
+            <li class="bullet-child-a">Report to the RuralNet Top Management and Board of Directors on the status of the Privacy Program.</li>
+            <li class="bullet-child-a">Monitor the legal and regulatory environment affecting the field staff, customers, contractors, vendors and third parties’ privacy.</li>
+            <li class="bullet-child-a">Facilitate the development and establishment of privacy roles and responsibilities throughout the organization to ensure that privacy practices are communicated, understood and implemented.</li>
+            <li class="bullet-child-a">Perform periodic assessments of privacy risk.</li>
+            <li class="bullet-child-a">Sponsor or direct privacy control correction or improvement efforts when needed or the development and implementation of new privacy controls.</li>
+            <li class="bullet-child-a">Review and process exception requests for the privacy policy.</li>
+            <li class="bullet-child-a">Oversee the notification process required in the event of a breach in privacy.</li>
+            <li class="bullet-child-a">Maintain this Policy.</li>
+            <li class="bullet-child-a">Facilitate the sharing of ideas, tools, procedures and approaches relating to privacy company-wide.</li>
+            <li class="bullet-child-a">Ensure compliance by the Personal Information Controller (PIC) or Personal Information Processor (PIP) with the Philippine Data Privacy Act (PDPA), its IRR, issuances by the National Privacy Commission (NPC), and other applicable laws and regulations relating to privacy and data protection.</li>
+            <li class="bullet-child-a">The opinion of the DPO must be given due weight. In case of disagreement and should the PIC or PIP choose not to follow the advice of the DPO, it is recommended as good practice to document the reasons therefore.
             </li>
             <li class="child-desc-c">1.3 Effective implementation of this policy is the responsibility of all employees, partners, contractors, vendors and contracted third parties including customers.  The key roles and responsibility to uphold the requirements in this policy is attached as an Annex on the contract or agreement.</li>
             <li class="child-desc-c">1.4 All employees with access to Personal Data shall operate and hold Personal Data under strict confidentiality if the same is not intended for public disclosure.</li>
@@ -180,11 +180,11 @@
             <li class="child-desc-b" style="text-decoration: underline">Corrective Measure</li>
             <li class="child-desc-b">Recovery consists of removing the ransom Trojan and transferring data from the backup storage. If ransom Trojan cannot be removed, data will be restored from daily record backups.</li>
             <li class="child-desc-b" style="text-decoration: underline">Preventive Measure</li>
-            <li class="child-desc-b">1. Daily backup of data base, application, domain server</li>
-            <li class="child-desc-b">2. Enable and personalize anti-spam settings</li>
-            <li class="child-desc-b">3. Orientation of users to avoid opening of suspicious attachments from unknown sender</li>
+            <li class="child-desc-b">1. Daily backup of data base, application, domain server.</li>
+            <li class="child-desc-b">2. Enable and personalize anti-spam settings.</li>
+            <li class="child-desc-b">3. Orientation of users to avoid opening of suspicious attachments from unknown sender.</li>
             <li class="child-desc-b">4. Up-to-date operating systems, antivirus and other software.</li>
-            <li class="child-desc-b">5. Browser add-on to block pop-ups</li>
+            <li class="child-desc-b">5. Browser add-on to block pop-ups.</li>
             <li class="child-desc-b"> 3.2 Password attacks – Password attacks are combination of brute force attacks that are used to       	gain access to insecure passwords. A hacker uses a program that tries multiple passwords to get 	access to a user’s data until a password work. </li>
             <li class="child-desc-b" style="text-decoration: underline">Corrective Measure</li>
             <li class="child-desc-b">Restore a backup for the domain server.  A change password will be administered by the IT Administrator to users affected by the breach.</li>

@@ -1,11 +1,10 @@
 .privacy_policy_content{
-    .container{
         border-left: 1px solid $gray-color;
         border-right: 1px solid $gray-color;
         background-color: $white-color;
         text-align: justify;
+        padding: 1rem;
         ul{
-            padding: 5rem;
             color: $primary-color;
 
             li{
@@ -74,17 +73,4 @@
                 margin-bottom: 1rem;
             }
         }
-    }
-}
-
-@media screen and (max-width: 400px){
-    .privacy_policy_content{
-        .container{
-            ul{
-                padding: 1rem;
-                margin-right: 1rem;
-                color: $primary-color;
-            }
-        }
-    }
 }
