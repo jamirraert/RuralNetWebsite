@@ -128,10 +128,10 @@
         <div class="accordion">
             <!-- Accordion Item 1 -->
             <div class="accordion-item" >
-                <div>
+                <div class="accordion-title">
                     <p>Helping a life insurer & lender successfully launch microinsurance</p>
                     <div>
-                        <button class="btn_vdetail" onclick="toggleAccordion('accordion-item1')">VIEW DETAILS</button>
+                        <button class="btn_vdetail" onclick="toggleAccordion('accordion-item1')">VIEW</button>
                     </div>
                 </div>   
                 <div id="accordion-item1" class="accordion-content">
@@ -176,10 +176,10 @@
     
             <!-- Accordion Item 2 -->
             <div class="accordion-item">
-                <div>
+                <div class="accordion-title">
                     <p>Cutting claims turnaround time by 60% versus industry</p>
                     <div>
-                        <button class="btn_vdetail" onclick="toggleAccordion('accordion-item2')">VIEW DETAILS</button>
+                        <button class="btn_vdetail" onclick="toggleAccordion('accordion-item2')">VIEW</button>
                     </div>
                 </div>
                 <div id="accordion-item2" class="accordion-content">
@@ -195,10 +195,10 @@
     
             <!-- Accordion Item 3 -->
             <div class="accordion-item">
-                <div>
+                <div class="accordion-title">
                     <p>Cutting administrative overhead for an MBA by 50%</p>
                     <div>
-                        <button class="btn_vdetail" onclick="toggleAccordion('accordion-item3')">VIEW DETAILS</button>
+                        <button class="btn_vdetail" onclick="toggleAccordion('accordion-item3')">VIEW</button>
                     </div>
                 </div>
                 <div id="accordion-item3" class="accordion-content">
