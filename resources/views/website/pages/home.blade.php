@@ -101,7 +101,7 @@
                     <li>
                         Average claim turnaround of 33 days <br>
                         <span>
-                            which is 40-60% faster than traditional insurers
+                            (which is 40-60% faster than traditional insurers)
                         </span>
                     </li>
                     <li>

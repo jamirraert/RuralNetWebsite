@@ -1,5 +1,4 @@
 .home_banner3{
-    .container{
         border-left: 1px solid $gray-color;
         border-right: 1px solid $gray-color;
         background-color: $blue-color;
@@ -14,14 +13,23 @@
             position: relative;
             padding: 3rem;
             margin-left: 1%;
-            
-            p{
-                color: $white-color;
-                font-size: 1.7rem;
-                font-weight: 600;
-                z-index: 1;
+            .parent {
+                p{
+                    color: $white-color;
+                    font-size: 1.7rem;
+                    font-weight: 600;
+                    z-index: 1;
+                    width: 80%;
+                }
             }
-
+            img:nth-child(3){
+                position: absolute;
+                bottom: 3em;
+                right: 6rem;
+                height: 8rem;
+                width: auto;
+        
+            }
             img:nth-child(2){
                 position: absolute;
                 top: 5rem;
@@ -30,14 +38,6 @@
                 height: auto;
             }
 
-            img:nth-child(3){
-                position: absolute;
-                bottom: 2rem;
-                right: 7rem;
-                height: 8rem;
-                width: auto;
-        
-            }
         }
         #hb3_right{
             display: flex;
@@ -47,52 +47,74 @@
                 width: fit-content;
             }
         }
-    }
 }
 
-@media screen and (max-width: 1124px) {
-    .home_banner3{
-        .container{
+// @media screen and (max-width: 1124px) {
+//     .home_banner3{
           
-            display: block;
-            flex-direction: column;
-            justify-content:start;
-            #hb3_left{
-                width: 70%;
-                padding-top: 3rem;
-                margin-left: 1%;
-            }
+//             display: block;
+//             flex-direction: column;
+//             justify-content:start;
+//             #hb3_left{
+//                 width: 70%;
+//                 padding-top: 3rem;
+//                 margin-left: 1%;
+//             }
 
-            #hb3_right{
-                display: flex;
-                justify-content:start;
-                align-items: center;
-                margin-left: 3rem;
-                margin-top: -2rem;
-                padding-bottom: 2rem;
-                a{
-                    width: fit-content;
-                }
-            }
-            
-        }
-    }
+//             #hb3_right{
+//                 display: flex;
+//                 justify-content:start;
+//                 align-items: center;
+//                 margin-left: 3rem;
+//                 margin-top: -2rem;
+//                 padding-bottom: 2rem;
+//                 a{
+//                     width: fit-content;
+//                 }
+//             }
+//     }
     
-}
+// }
 
 @media screen and (max-width: 600px) {
     .home_banner3{
-        .container{
-          
-            display: block;
-            flex-direction: column;
-            justify-content:start;
-            #hb3_left{
-               & img:last-child {
-                right: 1rem !important;
-               }
+        display: block !important;
+        padding: 1rem;
+        #hb3_left, #hb3_right {
+            width: 100% !important;
+        }
+        #hb3_left{
+            .parent {
+                width: 100%;
+                .desc {
+                    text-align: center;
+                    width: 100%;
+                    font-size: 1.3rem !important;
+                }
             }
-            
+            padding: 0;
+            margin-bottom: 1rem;
+            img:nth-child(3){
+                position: absolute;
+                bottom: 0;
+                right: 4rem;
+                height: 6rem;
+                width: auto;
+                opacity: .7;
+        
+            }
+            img:nth-child(2){
+                position: absolute;
+                top: 1.5rem;
+                left: 0rem;
+                width: 6rem;
+            }
+        }
+
+        #hb3_right{
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
     
