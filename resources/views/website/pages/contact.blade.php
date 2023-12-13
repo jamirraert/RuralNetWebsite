@@ -15,58 +15,69 @@
     </div>
 </div>
 
-<div class="contact_content">
-    <div class="container">
-        <p>Get in touch with us using the form below or by emailing <a href="mailto:support@ruralnet.ph">support@ruralnet.ph</a> to learn more about our online insurance platform.</p>
-        <form id="contact_enquiry">
-            @csrf
-            <div class="spinner-parent">
-                <div class="spinner-overlay">
-                     {{-- SPINNER --}}
-                    <div class="loading-spinner"></div>
+<div class="container">
+    <div class="contact_content">
+            <div class="desc">
+                <p>Get in touch with us using the form below or by emailing <a href="mailto:support@ruralnet.ph">support@ruralnet.ph</a> to learn more about our online insurance platform.</p>
+            </div>
+            <form id="contact_enquiry">
+                @csrf
+                <div class="spinner-parent">
+                    <div class="spinner-overlay">
+                         {{-- SPINNER --}}
+                        <div class="loading-spinner"></div>
+                    </div>
                 </div>
-            </div>
-            <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
-            <br>
-        
-            <input type="text" id="middleName" name="middleName" placeholder="Middle Name" required>
-            <br>
-        
-            <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
-            <br>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="middleName" name="middleName" placeholder="Middle Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="email" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" class="form-control" id="mobileNumber" name="mobileNumber" pattern="[0-9]{11}" maxlength="11" placeholder="e.g., 12345678901" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="organization" name="organization" placeholder="Organization" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="reasonForContacting" class="form-control" name="reasonForContacting" rows="4" placeholder="Reason for contacting RuralNet" required></textarea>
+                </div>
             
-            <input type="text" id="email" name="email" placeholder="Email Address" required>
-            <br>
-
-            <input type="tel" id="mobileNumber" name="mobileNumber" pattern="[0-9]{11}" maxlength="11" placeholder="e.g., 12345678901" required>
-            <br>
-        
-            <input type="text" id="organization" name="organization" placeholder="Organization" required>
-            <br>
-        
-            <textarea id="reasonForContacting" name="reasonForContacting" rows="4" placeholder="Reason for contacting RuralNet" required></textarea>
-            <br>
-        
-            <button type="button" class="btn" id="submitForm">Submit</button>
-            <div class="contact-sweet-msg" id="sweet-msg">
-                <img src="{{ asset('images/sweet-msg.png') }}" alt="">
-                <span class="close-sweet-msg" id="close-sweet-msg">x</span>
-            </div>
-        </form>
-
+                <div class="form-group">
+                    <button type="button" class="btn" id="submitForm">Submit</button>
+                </div>
+                <div class="contact-sweet-msg" id="sweet-msg">
+                    <img src="{{ asset('images/sweet-msg.png') }}" alt="">
+                    <span class="close-sweet-msg" id="close-sweet-msg">x</span>
+                </div>
+            </form>
     </div>
-</div>    
+</div>
+    
 
-<div class="login_banner2">
-    <div class="container">
+<div class="container">
+    <div class="login_banner2">
         <div class="contact_msg">
-            <p>Our customer service hotline is available from Monday to Saturday, 9AM to 5PM.</p>
-            <img src="{{ asset('images/CashKO_Hand-blue.png') }}">
+            <div class="desc">
+                <p>Our customer service hotline is available from Monday to Saturday, 9AM to 5PM. <img src="{{ asset('images/cashko-hand-blue-transparent.png') }}"></p>
+            </div>
         </div>
         <div class="contact_info">
             {{-- Old school style works! --}}
-            <center>
-                <table>
+            <ul>
+                <li>Email<a href="mailto:support@ruralnet.ph" style="color: #fff">:&nbsp;support@ruralnet.ph</a></li>
+                <li>Globe:&nbsp;028 876 1428</li>
+                <li>PLDT:&nbsp;032 342 7826</li>
+                <li>Toll-Free:&nbsp;1800 1320 0211</li>
+            </ul>
+                {{-- <table>
                     <tr>
                         <td class='info_h'>Email</td>
                         <td><a href="mailto:support@ruralnet.ph" style="color: #fff">:support@ruralnet.ph</a></td>
@@ -83,8 +94,7 @@
                         <td class='info_h'>Toll-Free</td>
                         <td>:1800 1320 0211</td>
                     </tr>
-                </table> 
-            </center>
+                </table>  --}}
         </div>
     </div>
 </div>

@@ -1,74 +1,102 @@
 .login_banner2{
-    .container{
         border-left: 1px solid $gray-color;
         border-right: 1px solid $gray-color;
         background-color: $blue-color;
 
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        display:flex;
+        height: 100%;
+        padding: 1rem;
         color: $white-color;
-        height: 30vh;
 
-        .contact_msg{
-            position: relative;
-            width: 46%;
-            p{
+        .contact_msg, .contact_info {
+            width: 50%;
+            padding: .5rem;
+        }
+        .contact_msg {
+            .desc {
+                width:100;
+            }
+            .desc p {
                 font-size: 1.6rem;
                 font-weight: 600;
-            }
-            img{
-                height: 5rem;
-                width: auto;
-                position: absolute;
-                bottom: -3rem;
-                right: -4rem;
+                line-height: 2rem;
+                position:relative;
+                img{
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    box-sizing: border-box;
+                    height: 5rem;
+                    width: 5rem;
+                    opacity: 0.8;
+                }
             }
         }
-        .contact_info{
-            td.info_h {
-                width: 90px; /* Set the desired width */
-                font-weight: bold;
-            }           
+}
+
+@media screen and (max-width: 600px) {
+    .login_banner2 {
+        display: block;
+        .contact_msg, .contact_info {
+            width: 100%;
+            margin-bottom: 1.5rem;
+        }
+        .contact_msg {
+            .desc p {
+                font-size: 1.2rem;
+                font-weight: 600;
+                line-height: 2rem;
+                position:relative;
+                text-align: center;
+                img{
+                   display: none;
+                }
+            }
+        }
+        .contact_info {
+           ul li {
+            text-align: center;
+            font-size: 1.2rem;
+           }
         }
     }
 }
 
-@media screen and (max-width: 1080px) {
-    .login_banner2{
-        .container{
+// @media screen and (max-width: 1080px) {
+//     .login_banner2{
+//         .container{
            
-            display: block;
-            height: 40vh;
-            text-align: center;
+//             display: block;
+//             height: 40vh;
+//             text-align: center;
     
-            .contact_msg{
-                position: relative;
-                width: 78%;
-                padding: 2rem;
-                p{
-                    font-size: 1.6rem;
-                    font-weight: 600;
-                }
-                img{
-                    position: absolute;
-                    bottom: -7rem;
-                    right: 1.4rem;
-                }
-            }
-            .contact_info{
-                width: 90%;
-                text-align: center;
+//             .contact_msg{
+//                 position: relative;
+//                 width: 78%;
+//                 padding: 2rem;
+//                 p{
+//                     font-size: 1.6rem;
+//                     font-weight: 600;
+//                 }
+//                 img{
+//                     position: absolute;
+//                     bottom: -7rem;
+//                     right: 1.4rem;
+//                 }
+//             }
+//             .contact_info{
+//                 width: 90%;
+//                 text-align: center;
                          
-            }
-        }
-    } 
-}
+//             }
+//         }
+//     } 
+// }
 
-@media screen and (max-width: 1080px)  and (orientation: landscape) {
-    .login_banner2{
-        .container{
-            height: 65vh;
-        }
-    } 
-}
+// @media screen and (max-width: 1080px)  and (orientation: landscape) {
+//     .login_banner2{
+//         .container{
+//             height: 65vh;
+//         }
+//     } 
+// }
