@@ -66,7 +66,11 @@
     <div class="login_banner2">
         <div class="contact_msg">
             <div class="desc">
-                <p>Our customer service hotline is available from Monday to Saturday, 9AM to 5PM. <img src="{{ asset('images/cashko-hand-blue-transparent.png') }}"></p>
+                <p>
+                    Our customer service hotline is available from 
+                    Monday to Saturday, 9AM to 5PM. 
+                    <img src="{{ asset('images/cashko-hand-blue-transparent.png') }}">
+                </p>
             </div>
         </div>
         <div class="contact_info">
