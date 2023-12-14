@@ -71,13 +71,13 @@
         </div>
         <div class="contact_info">
             {{-- Old school style works! --}}
-            <ul>
+            {{-- <ul>
                 <li>Email<a href="mailto:support@ruralnet.ph" style="color: #fff">:&nbsp;support@ruralnet.ph</a></li>
                 <li>Globe:&nbsp;028 876 1428</li>
                 <li>PLDT:&nbsp;032 342 7826</li>
                 <li>Toll-Free:&nbsp;1800 1320 0211</li>
-            </ul>
-                {{-- <table>
+            </ul> --}}
+                <table>
                     <tr>
                         <td class='info_h'>Email</td>
                         <td><a href="mailto:support@ruralnet.ph" style="color: #fff">:support@ruralnet.ph</a></td>
@@ -94,7 +94,7 @@
                         <td class='info_h'>Toll-Free</td>
                         <td>:1800 1320 0211</td>
                     </tr>
-                </table>  --}}
+                </table> 
         </div>
     </div>
 </div>
