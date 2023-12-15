@@ -51,7 +51,7 @@
                 </div>
             
                 <div class="form-group">
-                    <button type="button" class="btn" id="submitForm">Submit</button>
+                    <button type="button" class="btn" id="submitForm">SUBMIT</button>
                 </div>
                 <div class="contact-sweet-msg" id="sweet-msg">
                     <img src="{{ asset('images/sweet-msg.png') }}" alt="">

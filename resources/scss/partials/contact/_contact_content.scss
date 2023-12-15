@@ -7,8 +7,30 @@
     padding: .5rem;
     color: $primary-color;
 
-    .desc, form {
-        width: 50%;
+    .desc,form {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+
+        #submitForm{
+            width: 16rem;
+            padding: 1.2rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+    }
+
+    .desc {
+        width: 40%;
+        padding: .5rem;
+        box-sizing: border-box;
+
+        p{
+            margin-left: 20%;
+        }
+    } 
+    
+    form {
+        width: 60%;
         padding: .5rem;
         box-sizing: border-box;
     }
@@ -37,6 +59,19 @@
     form{
         // padding-right: 7%;
         position:relative;
+
+        .form-group{
+            input{
+                width: 35rem;
+                padding: 1.3rem;
+                font-size: 1rem;
+            }
+            textarea{
+                height: 150px;
+                resize: none;
+                font-size: 1rem;
+            }
+        }
 
         .spinner-parent {
             position:absolute;
@@ -87,7 +122,38 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1336px) {
+    .contact_content{
+        form{
+            // padding-right: 7%;
+            position:relative;
+    
+            .form-group{
+                input{
+                    width: 90%;
+                    padding: 1.3rem;
+                    font-size: 1rem;
+                }
+                textarea{
+                    height: 150px;
+                    resize: none;
+                    font-size: 1rem;
+                }
+            }
+
+            #submitForm{
+                width: 16rem;
+                padding: 1rem;
+                font-size: 1.2rem;
+                font-weight: 600;
+            }
+        }
+    }
+    
+}
+
+
+@media screen and (max-width: 900px) {
     .contact_content{
 
         display: block;
@@ -101,6 +167,7 @@
             font-size: 1.2rem;
             text-align: center;
             width: 90%;
+            margin-left: 2%;
         }
         .form-group {
             width: 90%;

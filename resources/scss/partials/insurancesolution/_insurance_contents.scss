@@ -2,13 +2,14 @@
     padding: 1rem;
     color: $primary-color;
     background: $white-color;
+        padding-bottom: 6rem;
         .contents-parent {
             padding: .5rem;
             width: 80;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
-
+            margin-bottom: 2rem;
             .images {
                 width: 28%;
                 position: relative;
@@ -22,8 +23,10 @@
             }
             .desc  {
                 width: 70%;
+                margin-bottom: 1rem;
                 & > p {
                     width: 73%;
+                    margin-bottom: 1.5rem;
                 }
                 & > p:not(:first-child) {
                     font-size: 1.2rem;
@@ -62,10 +65,12 @@
                 & > p:not(:first-child) {
                     font-size: 1.1rem;
                     margin: 1.5rem auto;
+                    text-align:justify;
                 }
                 .desc-title {
                     font-size: 1.5rem;
                     font-weight: 700;
+                    text-align:left;
                 }
             }
         }

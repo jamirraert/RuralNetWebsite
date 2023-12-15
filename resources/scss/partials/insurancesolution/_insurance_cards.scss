@@ -37,8 +37,7 @@
                 border-top-right-radius: 2rem;
                 border-top-left-radius: 2rem;
                 color: $white-color;
-                height: 35%;
-
+                
                 p:first-child {
                     font-size: 1.4rem;
                     font-weight: 600;
@@ -52,6 +51,12 @@
                 padding: 2rem;
                 text-align: center;
                 font-weight: 500;
+
+                ul{
+                    li{
+                        padding-bottom: 0.5rem;
+                    }
+                }
             }
         }
     }

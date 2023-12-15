@@ -2,6 +2,7 @@ const navItems = document.querySelector('#nav_items');
 const openNavBtn = document.querySelector('#open_nav_btn');
 const closeNavBtn = document.querySelector('#close_nav_btn');
 
+const container = document.querySelector('.container');
 
 openNavBtn.addEventListener('click', ()=>{
     navItems.style.display = 'flex';
@@ -14,6 +15,7 @@ closeNavBtn.addEventListener('click', ()=>{
     openNavBtn.style.display = 'inline-block';
     closeNavBtn.style.display = 'none';
 })
+
 
 function updateButtonVisibility() {
     if (window.innerWidth > 1024) {
@@ -29,11 +31,24 @@ function updateButtonVisibility() {
         }
     }
 }
+function handleBodyClick(event) {
+    if (document.getElementById('open_nav_btn').contains(event.target)) {
+        return false;
+    }
+    if (document.getElementById('close_nav_btn').contains(event.target)) {
+        return false;
+    }
+    if (!document.getElementById('nav_items').contains(event.target)) {
+        navItems.style.display = 'none';
+        openNavBtn.style.display = 'inline-block';
+        closeNavBtn.style.display = 'none';
+    }
+}
+
+document.body.addEventListener('click', handleBodyClick);
 
 window.addEventListener('resize', function() {
-    // Initial call to set button visibility based on screen width
     updateButtonVisibility();
-    console.log("test");
 });
   
 

@@ -16,7 +16,7 @@
             <li class="lead">II.SCOPE</li>
             <li class="desc">This policy covers RuralNet and CashKo Insurance Brokerage, henceforth referred to as the “Company”. This also applies to all employees including contractors, partners, vendors and contracted third parties as well as customers who are directly involved in processing personal data. The Personal Data coverage includes, but is not limited to the data of employees, applicants, customers and insurance policy holders.</li>
             {{-- DEFINATION --}}
-            <li class="lead">III.DEFINATION</li>
+            <li class="lead">III.DEFINITION OF TERMS</li>
             <li class="desc">The following key terms used throughout this document are defined for clarification</li>
             {{-- CHILD DATA SUBJECT --}}
             <li class="child"><b>A. Data Subject</b></li>

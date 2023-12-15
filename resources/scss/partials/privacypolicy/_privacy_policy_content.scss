@@ -3,18 +3,23 @@
         border-right: 1px solid $gray-color;
         background-color: $white-color;
         text-align: justify;
-        padding: 1rem;
+        
+        padding-top: 7rem;
+        padding-left: 25rem;
+        padding-right: 25rem;
+        padding-bottom: 7rem;
         ul{
             color: $primary-color;
 
             li{
                 font-weight: 500;
-                font-size: 1.4;
+                font-size: 1.4rem;
             }
 
             li.lead{
                 font-size: 1.8rem;
                 margin-bottom: 1rem;
+                font-weight: 700;
             }
             li.desc{
                 margin-left: 2rem;
@@ -73,4 +78,52 @@
                 margin-bottom: 1rem;
             }
         }
+}
+@media screen and (max-width: 2000px) {
+    .privacy_policy_content{
+       
+        padding-top: 5rem;
+        padding-left: 15rem;
+        padding-right: 15rem;
+        padding-bottom: 7rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .privacy_policy_content{
+       
+        padding-top: 5rem;
+        padding-left: 10rem;
+        padding-right: 10rem;
+        padding-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .privacy_policy_content{
+       
+        padding-top: 5rem;
+        padding-left: 6rem;
+        padding-right: 6rem;
+        padding-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .privacy_policy_content{
+        padding: 1rem;
+        padding-left: 2rem;
+        padding-right: 3rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        text-align: left;
+
+        ul{
+            color: $primary-color;
+            li.desc{
+                margin-left: 0rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
 }

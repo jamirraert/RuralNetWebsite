@@ -16,21 +16,20 @@
         position: relative;
         overflow: hidden;
 
-        #banner_left_img{
-            height: 42rem;
-            width: auto;
-            position: absolute;
-            left: -13rem;
-        }
-
-        div{
-            height: 80vh;
+        #banner_main{
+            height: 70vh;
             width: 700px;
             margin: 0 auto;
-            margin-top: 25rem; 
+            margin-top: 30rem; 
             text-align: center;
             z-index: 1;
             
+            .btn_big{
+                font-size:x-large;
+                padding: 1.7rem;
+                width: 22rem;
+                border-radius: 2.5rem;
+            }
 
             #banner_header{
                 color: $white-color;
@@ -57,76 +56,104 @@
             }  
         }
        
-
-        #banner_right_img{
-            height: 41rem;
+        #banner_left_img{
+            height: 60rem;
             width: auto;
             position: absolute;
-            right: -8rem;
+            left: -13rem;
+        }
+
+        #banner_right_img{
+            height: 60rem;
+            width: auto;
+            position: absolute;
+            right: -6rem;
             top:20rem;
         }
 
     }
 }
 
-@media screen and (max-width: 1647px) {
+@media screen and (max-width: 2047px) {
     .banner{
-      
         .container{
-           
-
-            #banner_left_img{
-                height: 23rem;
-                width: auto;
-                position: absolute;
-                left: -5rem;
-                top: 23rem;
-            }
-
-            #banner_right_img{
-                height: 33rem;
-                width: auto;
-                position: absolute;
-                right: -8rem;
-                top:20rem;
-            }
-        
-            
+            #banner_main{
+                
+                .btn_big{
+                    font-size:large; //modified
+                    padding: 1.5rem; // modified
+                    width: 20rem; // modified
+                    border-radius: 2.5rem; // modified
+                }
         }
-
+           
+            #banner_left_img{
+                height: 55rem; // modified
+            }
+    
+            #banner_right_img{
+                height: 55rem;  // modified
+            }
+    
+        }
     }
 }
 
-/* -----------------  MEDIA QUERIES (MEDIUM DEVICES) -------------- */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1900px) {
     .banner{
-        height: 100vh;
-        display: flex;
-        place-items: center;
-        overflow: hidden;
-
+        height: 60vh;
         .container{
-            display: flex;
-
-            #banner_left_img{
-                height: 23rem;
-                width: auto;
-                position: absolute;
-                left: -3rem;
-                top: 23rem;
-            }
-
-            div{
-                height: 100vh;
-                width: 300px;
+            #banner_main{
+                
+                height: 50vh; // modified
+                width: 700px;
                 margin: 0 auto;
-                margin-top: 45rem; 
+                margin-top: 10rem; // modified 
                 text-align: center;
                 z-index: 1;
+  
+                .btn_big{
+                    font-size:large; //modified
+                    padding: 1.5rem; // modified
+                    width: 18rem; // modified
+                    border-radius: 2.5rem; // modified
+                }
 
+            }
+            #banner_left_img{
+                height: 45rem; // modified
+            }
+    
+            #banner_right_img{
+                height: 40rem;  // modified
+                top:9rem;
+            }
+    
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .banner{
+        .container{
+      
+            #banner_main{
+                height: 50vh; // modified
+                width: 550px; // modified
+                margin-top: 10rem; // modified
+                text-align: center;
+                z-index: 1;
+                
+                .btn_big{
+                    font-size:large; //modified
+                    padding: 1.5rem; // modified
+                    width: 18rem; // modified
+                    border-radius: 2.5rem; // modified
+                }
+    
                 #banner_header{
                     color: $white-color;
-                    font-size: 2rem;
+                    font-size: 2.5rem;
                     font-weight: 600;
                     position: relative;
                     display: inline-block;
@@ -134,29 +161,278 @@
     
                     #underline {
                         position: absolute;
-                        bottom: 3rem;
-                        left: 1rem;
-                        width: 11rem;
+                        bottom: -0.5rem;
+                        left: 0;
+                        width: 15rem;
                         height: auto;
                     }
                 }
         
                 #banner_content{
                     color: $white-color;
-                    font-size: 0.9rem;
+                    font-size: 1.4rem;
                     font-weight: 200;
-                    margin-bottom: 2rem;
+                    margin-bottom: 3rem;
                 }  
             }
-
-            #banner_right_img{
-                height: 30rem;
+           
+            #banner_left_img{
+                height: 45rem; // modified
                 width: auto;
-                right: -6rem;
-                top: 68rem;
+                position: absolute;
+                left: -13rem;
             }
+    
+            #banner_right_img{
+                width: auto;
+                position: absolute;
+                right: -6rem;
+            }
+    
         }
+    }
+}
 
+
+@media screen and (max-width: 1430px) {
+    .banner{
+        margin-top: 0;
+        height: 80vh;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+    
+        .container{
+            margin-top: -3rem;
+            
+            background-color: $primary-color;
+            border: 1px solid $gray-color;
+            display: flex;
+            align-items: center;
+    
+            position: relative;
+            overflow: hidden;
+    
+            #banner_main{
+                height: 50vh; // modified
+                width: 550px; // modified
+                margin: 0 auto;
+                margin-top: 10rem; // modified
+                text-align: center;
+                z-index: 1;
+                
+                .btn_big{
+                    font-size:large; //modified
+                    padding: 1.5rem; // modified
+                    width: 18rem; // modified
+                    border-radius: 2.5rem; // modified
+                }
+    
+                #banner_header{
+                    color: $white-color;
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                    position: relative;
+                    display: inline-block;
+                    margin-bottom: 2rem;
+    
+                    #underline {
+                        position: absolute;
+                        bottom: -0.5rem;
+                        left: 0;
+                        width: 15rem;
+                        height: auto;
+                    }
+                }
+        
+                #banner_content{
+                    color: $white-color;
+                    font-size: 1.4rem;
+                    font-weight: 200;
+                    margin-bottom: 3rem;
+                }  
+            }
+           
+            #banner_left_img{
+                height: 40rem; // modified
+                width: auto;
+                position: absolute;
+                left: -13rem;
+            }
+    
+            #banner_right_img{
+                height: 40rem;  // modified
+                width: auto;
+                position: absolute;
+                right: -6rem;
+                top:3rem; // modified
+            }
+    
+        }
+    }
+}
+
+@media screen and (max-width: 1275px) {
+    .banner{
+        margin-top: 0;
+        height: 80vh;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+    
+        .container{
+            margin-top: -3rem;
+            
+            background-color: $primary-color;
+            border: 1px solid $gray-color;
+            display: flex;
+            align-items: center;
+    
+            position: relative;
+            overflow: hidden;
+    
+            #banner_main{
+                height: 50vh; // modified
+                width: 470px; // modified
+                margin: 0 auto;
+                margin-top: 10rem; // modified
+                text-align: center;
+                z-index: 1;
+                
+                .btn_big{
+                    font-size:1.2rem; //modified
+                    font-weight: 600;
+                    padding: 1.5rem; // modified
+                    width: 14rem; // modified
+                    border-radius: 2.5rem; // modified
+                }
+    
+                #banner_header{
+                    color: $white-color;
+                    font-size: 2.1rem;
+                    font-weight: 600;
+                    position: relative;
+                    display: inline-block;
+                    margin-bottom: 2rem;
+    
+                    #underline {
+                        position: absolute;
+                        bottom: -0.5rem;
+                        left: 0;
+                        width: 13rem;
+                        height: auto;
+                    }
+                }
+        
+                #banner_content{
+                    color: $white-color;
+                    font-size: 1.4rem;
+                    font-weight: 200;
+                    margin-bottom: 3rem;
+                }  
+            }
+           
+            #banner_left_img{
+                height: 38rem; // modified
+                width: auto;
+                position: absolute;
+                left: -13rem;
+            }
+    
+            #banner_right_img{
+                height: 35rem;  // modified
+                width: auto;
+                position: absolute;
+                right: -6rem;
+                top:3rem; // modified
+            }
+    
+        }
+    }
+}
+
+
+/* -----------------  MEDIA QUERIES (MEDIUM DEVICES) -------------- */
+@media screen and (max-width: 1000px) {
+    .banner{
+        margin-top: 0;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+    
+        .container{
+            margin-top: -3rem;
+            
+            background-color: $primary-color;
+            border: 1px solid $gray-color;
+            display: flex;
+            align-items: center;
+    
+            position: relative;
+            overflow: hidden;
+    
+            
+            #banner_main{
+                
+                height: 80vh; // modified
+                width: 350px; // modified
+                margin: 0 auto;
+                margin-top: 30rem; // modified
+                text-align: center;
+                z-index: 1;
+                
+                .btn_big{
+                    margin-top: 0;
+                    font-size:1rem; //modified
+                    font-weight: 600;
+                    padding: 1.1rem; // modified
+                    width: 14rem; // modified
+                    border-radius: 2.5rem; // modified
+                }
+    
+                #banner_header{
+                    color: $white-color;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    position: relative;
+                    display: inline-block;
+                    margin-bottom: 2rem;
+    
+                    #underline {
+                        position: absolute;
+                        bottom: -0.5rem;
+                        left: 1rem;
+                        width: 9rem;
+                        height: auto;
+                    }
+                }
+        
+                #banner_content{
+                    color: $white-color;
+                    font-size: 1rem;
+                    font-weight: 200;
+                    margin-bottom: 3rem;
+                }  
+            }
+           
+            #banner_left_img{
+                height: 27rem; // modified
+                width: auto;
+                position: absolute;
+                left: -12rem;
+                top:5rem;
+            }
+    
+            #banner_right_img{
+                height: 26rem;  // modified
+                width: auto;
+                position: absolute;
+                right: -6rem;
+                top:50rem; // modified
+            }
+    
+        }
     }
 }
 
@@ -174,61 +450,70 @@
             
             background-color: $primary-color;
             border: 1px solid $gray-color;
-            display: inline-block;
+            display: flex;
             align-items: center;
     
             position: relative;
             overflow: hidden;
     
-            #banner_left_img{
-                height: 30rem;
-                width: auto;
-                position: absolute;
-                left: -13rem;
-                top: 0;
-            }
-    
-            div{
-                height: 100vh;
-                width: 400px;
+            
+            #banner_main{
+                
+                height: 80vh; // modified
+                width: 350px; // modified
                 margin: 0 auto;
-                margin-top: 15rem; 
+                margin-top: 10rem; // modified
                 text-align: center;
                 z-index: 1;
                 
+                .btn_big{
+                    margin-top: 0;
+                    font-size:1rem; //modified
+                    font-weight: 600;
+                    padding: 1.5rem; // modified
+                    width: 14rem; // modified
+                    border-radius: 2.5rem; // modified
+                }
     
                 #banner_header{
                     color: $white-color;
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                     font-weight: 600;
                     position: relative;
                     display: inline-block;
-                    margin-bottom: 1rem;
+                    margin-bottom: 2rem;
     
                     #underline {
                         position: absolute;
-                        bottom: 3rem;
-                        left: 4.5rem;
-                        width: 10rem;
+                        bottom: -0.5rem;
+                        left: 1rem;
+                        width: 9rem;
                         height: auto;
                     }
                 }
         
                 #banner_content{
                     color: $white-color;
-                    font-size: 0.9rem;
+                    font-size: 1rem;
                     font-weight: 200;
-                    margin-bottom: 0.2;
+                    margin-bottom: 3rem;
                 }  
             }
            
-    
-            #banner_right_img{
-                height: 30rem;
+            #banner_left_img{
+                height: 30rem; // modified
                 width: auto;
                 position: absolute;
-                right: -8rem;
-                top:20rem;
+                left: -13rem;
+                top:0rem;
+            }
+    
+            #banner_right_img{
+                height: 26rem;  // modified
+                width: auto;
+                position: absolute;
+                right: -6rem;
+                top:10rem; // modified
             }
     
         }
@@ -238,23 +523,23 @@
 
 
 
-/* -----------------  MEDIA QUERIES (SMALL DEVICES) -------------- */
-@media screen and (max-width: 600px) {
-    .banner {
-       .container {
-        & > img {
-            height: 19rem !important;
-        }
-        div {
-            margin-top: 36rem !important;
-        }
-        #banner_left_img {
-            top: 18rem !important;
-        }
-        #banner_right_img {
-            right: -1rem;
-            top: 60rem;
-        }
-       }
-    }
-}
+// /* -----------------  MEDIA QUERIES (SMALL DEVICES) -------------- */
+// @media screen and (max-width: 600px) {
+//     .banner {
+//        .container {
+//         & > img {
+//             height: 19rem !important;
+//         }
+//         div {
+//             margin-top: 36rem !important;
+//         }
+//         #banner_left_img {
+//             top: 18rem !important;
+//         }
+//         #banner_right_img {
+//             right: -1rem;
+//             top: 60rem;
+//         }
+//        }
+//     }
+// }

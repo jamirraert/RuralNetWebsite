@@ -14,12 +14,12 @@
             padding:2rem;
             margin:4rem;
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
+            flex-direction: row;
             align-items: center;
             border: 1px solid $primary-color;
             border-radius: 5rem;
-
+           
             p{
                 margin-right: 2rem;
                 font-size: 1.2rem;
@@ -37,7 +37,16 @@
             div{
                 margin-top: 1rem;
                 border-radius: 3rem;
+                display: flex;
+                flex-direction: column;
+
+               
+                justify-content: center;
+                align-items: center;
+                text-align: center;
                 p{  
+                    width: 100%;
+                    margin-left: 2.3rem;
                     margin-bottom: 2rem;
                     font-size: 1.2rem;
                     font-weight: 600;

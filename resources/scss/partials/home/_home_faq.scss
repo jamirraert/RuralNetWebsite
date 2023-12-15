@@ -38,6 +38,9 @@
 
                 .accordion-item{
                     border-bottom: 1px solid $pink-color;
+                    .accordion-content{
+                        padding-bottom: 1.5rem;
+                    }
 
                     div:first-child {
 
