@@ -36,6 +36,10 @@ document.addEventListener("DOMContentLoaded", function () {
             .then(response => response.json())
             .then(data => {
                 if(data === 200) {
+
+                    // Clear form fields
+                    document.getElementById('contact_enquiry').reset();
+
                     spinner.style.display = 'none';
                     sweetMsg.style.display = 'block'
 
