@@ -71,6 +71,7 @@ nav
                 padding-right: 0;
                 display: none;
                 perspective: 300px;
+                background-color: $darkgray-color;
 
                 li{
                     width: 100%;
@@ -107,6 +108,7 @@ nav
                         padding: 1.5rem 2rem;
                         border-radius: 0;
                         background: linear-gradient($ligthgray-color,darken($ligthgray-color, 12%));
+                        margin-top: -0.3rem;
                     }
                 }
             }
