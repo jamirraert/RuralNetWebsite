@@ -208,7 +208,7 @@
                 <div class="accordion-title">
                     <p>Cutting administrative overhead for an MBA by 50%</p>
                     <div>
-                        <button class="btn_vdetail" onclick="toggleAccordion('accordion-item2')">VIEW DETAIL</button>
+                        <button class="btn_vdetail" onclick="toggleAccordion('accordion-item3')">VIEW DETAIL</button>
                         <button class="btn_vdetail mobile-label" onclick="toggleAccordion('accordion-item3')">VIEW</button>
                     </div>
                 </div>

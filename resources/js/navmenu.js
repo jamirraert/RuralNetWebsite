@@ -45,10 +45,16 @@ function handleBodyClick(event) {
     }
 }
 
-document.body.addEventListener('click', handleBodyClick);
+// document.body.addEventListener('click', handleBodyClick);
+
 
 window.addEventListener('resize', function() {
     updateButtonVisibility();
+    if (window.innerWidth <= 1022) {
+        document.body.addEventListener('click', handleBodyClick);
+    } else {
+       document.body.removeEventListener('click', handleBodyClick);
+    }
 });
   
 
