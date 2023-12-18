@@ -127,12 +127,6 @@
         form{
             // padding-right: 7%;
             position:relative;
-
-
-            .contact-sweet-msg {
-                bottom: 49%;
-                left: 26%;
-            }
     
             .form-group{
                 input{
@@ -168,6 +162,11 @@
         }
         form {
             padding: 0;
+
+            .contact-sweet-msg {
+                bottom: 49% !important;
+                left: 26% !important;
+            }
         }
         .desc p {
             font-size: 1.2rem;
