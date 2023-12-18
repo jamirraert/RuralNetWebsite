@@ -38,7 +38,7 @@
 
 <div class="home_cards">
     <div class="container">
-        <div id="micro">
+        <div id="micro" style="visibility: hidden">
             <div>
                 <img src="{{ asset('images/CashKo-Tertiatry-Descriptor-FW-09.png') }}">
                 <p>
@@ -49,7 +49,7 @@
             </div>
            
         </div>
-        <div id="financial">
+        <div id="financial" style="visibility: hidden">
             <div>
                 <img src="{{ asset('images/CashKo-Primary-Descriptor-FW-01.png') }}">
                 <p>

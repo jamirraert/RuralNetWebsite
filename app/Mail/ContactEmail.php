@@ -39,7 +39,7 @@ class ContactEmail extends Mailable
     public function build()
     {
         return $this->from('noreply@ruralnet.ph', 'Admin')
-                    ->subject('Enquiry')
+                    ->subject('INQUIRY')
                     ->view('website.email.contact');
     }
 
