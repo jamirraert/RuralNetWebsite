@@ -94,9 +94,10 @@
         .contact-sweet-msg {
             position: absolute;
             bottom: 45%;
-            left: -20%;
+            left: 0%;
+            top: 20%;
             height: 27vh;
-            width: 52%;
+            width: 233px;
             overflow: hidden;
             border-radius: 1rem;
             opacity: .9;
@@ -165,7 +166,7 @@
 
             .contact-sweet-msg {
                 bottom: 49% !important;
-                left: 26% !important;
+                left: 36% !important;
             }
         }
         .desc p {
@@ -184,5 +185,17 @@
             width: 100%;
         }
 
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .contact_content{
+
+     
+        form {
+            .contact-sweet-msg {
+                left: 24% !important;
+            }
+        }
     }
 }
