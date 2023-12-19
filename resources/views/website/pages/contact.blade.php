@@ -51,7 +51,7 @@
                 </div>
             
                 <div class="form-group">
-                    <button type="button" class="btn" id="submitForm">SUBMIT</button>
+                    <button type="button" class="btn" id="submitForm">Submit</button>
                 </div>
                 <div class="contact-sweet-msg" id="sweet-msg">
                     <img src="{{ asset('images/sweet-msg.png') }}" alt="">
@@ -84,19 +84,19 @@
                 <table>
                     <tr>
                         <td class='info_h'>Email</td>
-                        <td><span style="color: #fff">:support@ruralnet.ph</span></td>
+                        <td><span style="color: #fff">:&nbsp;support@ruralnet.ph</span></td>
                     </tr>
                     <tr>
                         <td class='info_h'>Globe</td>
-                        <td>:028 876 1428</td>
+                        <td>:&nbsp;028 876 1428</td>
                     </tr>
                     <tr>
                         <td class='info_h'>PLDT</td>
-                        <td>:032 342 7826</td>
+                        <td>:&nbsp;032 342 7826</td>
                     </tr>
                     <tr>
                         <td class='info_h'>Toll-Free</td>
-                        <td>:1800 1320 0211</td>
+                        <td>:&nbsp;1800 1320 0211</td>
                     </tr>
                 </table> 
         </div>
