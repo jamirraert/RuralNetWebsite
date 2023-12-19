@@ -32,7 +32,7 @@
         </div>
     </nav>
     @yield('content')
-    <footer>
+    {{-- <footer>
         <div class="container">
             <div id="f_left">
                 <span><a href="/contact" style="color: #FE9202; cursor: pointer;">CONTACT US</a></span>
@@ -53,7 +53,18 @@
                 <span><a href="/">© RuralNet</a></span>
             </div>
         </div>
-    </footer>   
+    </footer>    --}}
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="/contact">CONTACT US</a></li>
+                <li>Globe: (028) 8761-428</li>
+                <li>PLDT: (032) 342 7826</li>
+                <li>Toll-Free: 1800 1320 0211</li>
+                <li>support@ruralnet.ph</li>
+            </ul>
+        </div>
+    </footer>
     {{-- <script src="{{ asset('/build/assets/app-23295724.js') }}"></script>  --}}
 </body>
 </html>

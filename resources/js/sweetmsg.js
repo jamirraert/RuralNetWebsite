@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
             })
             .then(response => response.json())
             .then(data => {
-                if(data === 200) {
+                if(data >= 200 || data < 300) {
 
                     // Clear form fields
                     document.getElementById('contact_enquiry').reset();
@@ -46,6 +46,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     setTimeout(function() {
                         sweetMsg.style.display = 'none'
                     }, 3000)
+                }else {
+                    console.log("Something went wrong")
                 }
             })
         event.preventDefault();
