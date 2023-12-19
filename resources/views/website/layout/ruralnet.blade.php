@@ -37,12 +37,14 @@
             <div id="f_left">
                 <span><a href="/contact" style="color: #FE9202; cursor: pointer;">CONTACT US</a></span>
                 <div>
-                    <span>(028) 8761-428</span>
-                    <span><a href="mailto:support@ruralnet.ph">support@ruralnet.ph</a></span>
+                    <span style="color: #002B79; cursor: pointer; margin-right: 1rem; font-size: 1rem;font-weight: 600;">Globe: (028) 8761-428</span>
+                    <span style="color: #002B79; cursor: pointer; margin-right: 1rem; font-size: 1rem;font-weight: 600;">PLDT: (032) 342 7826</span>
+                    <span style="color: #002B79; cursor: pointer; margin-right: 1rem; font-size: 1rem;font-weight: 600;">Toll-Free: 1800 1320 0211</span>
+                    <span><span style="color: #002B79; font-weight: lighter;">support@ruralnet.ph</span></span>
             
                 </div>
              </div>
-             <div id="f_right">
+             <div id="f_right" style="visibility:hidden">
                 <div>
                     <i class='bx bxl-instagram'></i>
                     <i class='bx bxl-twitter' ></i>
