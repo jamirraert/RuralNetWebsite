@@ -48,11 +48,22 @@ class RuralNetWebsiteController extends Controller
 
         $contact = new ContactEmail($info);
         if(Mail::to($sendTo)->send($contact)) {
-            $response = response()->json(['success' => 'Successfully sent'], 200);
-            return $response->status();
+            $response = response()->json(['success' => 'Successfully sent']);
+            $response->setStatusCode($response->getStatusCode());
+            $responseData = [
+                "success" => "Successfully sent",
+                "status" => $response->getStatusCode()
+            ];
+            return $responseData;
         }else {
-            $response = response()->json(['failed' => 'Something went wrong'], 500);
-            return $response->status();
+            $response = response()->json(['failed' => 'Something went wrong']);
+            $response->setStatusCode($response->getStatusCode());
+            $responseData = [
+                'failed' => 'Something went wrong',
+                'status' => $response->getStatusCode()
+            ];
+            // return $response->status();
+            return $responseData;
         }
         // return redirect()->to(URL::current());
         // return redirect()->route('thank_you');

@@ -6,6 +6,26 @@ var closeBtn = document.getElementById('close-sweet-msg');
 var form = document.getElementById('contact_enquiry');
 var inputs = form.getElementsByTagName("input")
 
+// VALIDATE EMAIL
+function isValidEmail(email) {
+    // Simple email validation regex pattern
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
+function alertBorder(input) {
+        input.style.border = '1px solid red'
+    setTimeout(function() {
+        input.style.border = '1px solid #E9D0FC';
+    }, 3000)
+}
+
+function alertBorderAllFields(inputs) {
+    inputs.classList.add('alertBorder')
+    setTimeout(function() {
+        inputs.classList.remove('alertBorder')
+    }, 3000)
+}
 
 // LOADING SPINNER
 document.addEventListener("DOMContentLoaded", function () {
@@ -14,8 +34,37 @@ document.addEventListener("DOMContentLoaded", function () {
         let isTrue = false;
 
         for(var i = 0; i < inputs.length; i++) {
-            if(inputs[i].value == '') {
-                alert("All fields are required")
+            if(inputs[i].name === 'middleName') {
+                continue;
+            }
+
+            if (inputs[i].name === 'mobileNumber') {
+                // Check if the value is not a valid mobile number
+                var mobileRegex = /^\d{10}$/; // Adjust the regex pattern as needed
+                if (!mobileRegex.test(inputs[i].value)) {
+                    alert("Invalid mobile number");
+                    inputs[i].value = ''
+                    isTrue = true;
+                    break;
+                }
+            } else if(inputs[i].name === 'email') {
+                if(!isValidEmail(inputs[i].value)) {
+                    alert("Invalid email address");
+                    inputs[i].value = '';
+                    alertBorder(inputs[i])
+                    isTrue = true;
+                    break;
+                }
+            } else if (inputs[i].value === '') {
+                alert("All fields are required");
+                for(let o = 0; o <= inputs.length; o++) {
+                    if(inputs[o].name === 'middleName') {
+                        continue;
+                    }
+                    if(inputs[o].value === '') {
+                        alertBorderAllFields(inputs[o])
+                    }
+                }
                 isTrue = true;
                 break;
             }
@@ -26,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
             
             spinner.style.display = "block";
 
-        fetch('/send_email', {
+        await fetch('/send_email', {
                 method: 'POST',
                 body: formData,
                 headers: {
@@ -35,7 +84,8 @@ document.addEventListener("DOMContentLoaded", function () {
             })
             .then(response => response.json())
             .then(data => {
-                if(data >= 200 || data < 300) {
+                console.log('data: ' + JSON.stringify(data))
+                if(data?.status >= 200 || data?.status < 300) {
 
                     // Clear form fields
                     document.getElementById('contact_enquiry').reset();
