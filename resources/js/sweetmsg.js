@@ -38,11 +38,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 continue;
             }
 
-            if (inputs[i].name === 'mobileNumber') {
+            if (inputs[i].name === 'mobileNumber' && inputs[i].value !== '') {
                 // Check if the value is not a valid mobile number
-                var mobileRegex = /^\d{10}$/; // Adjust the regex pattern as needed
+                var mobileRegex = /^\d{11}$/; // Adjust the regex pattern as needed
                 if (!mobileRegex.test(inputs[i].value)) {
                     alert("Invalid mobile number");
+                    alertBorder(inputs[i])
                     inputs[i].value = ''
                     isTrue = true;
                     break;
