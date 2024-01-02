@@ -38,25 +38,25 @@
 
 <div class="home_cards">
     <div class="container">
-        <div id="micro" style="visibility: hidden">
+        <div id="micro">
             <div>
                 <img src="{{ asset('images/CashKo-Tertiatry-Descriptor-FW-09.png') }}">
                 <p>
                     CashKO provides microinsurance solutions that 
                     focus on fast claims processing with high approval rates.
                 </p>
-                <button class='btn-primary'>LEARN MORE</button>
+                <button class='btn-primary' onclick="redirect('micro.insurance-cashko.com')">LEARN MORE</button>
             </div>
            
         </div>
-        <div id="financial" style="visibility: hidden">
+        <div id="financial">
             <div>
                 <img src="{{ asset('images/CashKo-Primary-Descriptor-FW-01.png') }}">
                 <p>
                     CashKO works with underserved SMEs to develop comprhensive 
                     insurance plans that can help businesses grow at scale.
                 </p>
-                <button class='btn_blue'>LEARN MORE</button>
+                <button class='btn_blue' onclick="redirect('cashko-insurance.com')">LEARN MORE</button>
             </div>
             
         
@@ -285,6 +285,10 @@
                     }
                 });
             });
+
+            function redirect(url) {
+                window.location=`https://${url}`;
+            }
 
             </script>
         </div>
