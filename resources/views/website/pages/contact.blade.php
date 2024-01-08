@@ -84,19 +84,19 @@
                 <table>
                     <tr>
                         <td class='info_h'>Email</td>
-                        <td><span style="color: #fff">:&nbsp;support@ruralnet.ph</span></td>
+                        <td><span style="color: rgb(255,255,255)">:&nbsp;support@ruralnet.ph</span></td>
                     </tr>
                     <tr>
                         <td class='info_h'>Globe</td>
-                        <td>:&nbsp;028 876 1428</td>
+                        <td><span style="color: rgb(255,255,255)">:&nbsp;028 876 1428</span></td>
                     </tr>
                     <tr>
                         <td class='info_h'>PLDT</td>
-                        <td>:&nbsp;032 342 7826</td>
+                        <td><span style="color: rgb(255,255,255)">:&nbsp;032 342 7826</span></td>
                     </tr>
                     <tr>
                         <td class='info_h'>Toll-Free</td>
-                        <td>:&nbsp;1800 1320 0211</td>
+                        <td><span style="color: rgb(255,255,255)">:&nbsp;1800 1320 0211</span></td>
                     </tr>
                 </table> 
         </div>
