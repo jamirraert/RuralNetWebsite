@@ -4,7 +4,8 @@ var spinner = document.querySelector(".spinner-parent");
 var sweetMsg = document.getElementById('sweet-msg');
 var closeBtn = document.getElementById('close-sweet-msg');
 var form = document.getElementById('contact_enquiry');
-var inputs = form.getElementsByTagName("input")
+var inputs = form.querySelectorAll(".form-control");
+
 
 // VALIDATE EMAIL
 function isValidEmail(email) {
@@ -40,7 +41,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (inputs[i].name === 'mobileNumber' && inputs[i].value !== '') {
                 // Check if the value is not a valid mobile number
-                var mobileRegex = /^\d{11}$/; // Adjust the regex pattern as needed
+                var mobileRegex = /^\d{11}$/,
+                    charSpecialCharReg = /[^A-Za-z0-9]/
+
                 if (!mobileRegex.test(inputs[i].value)) {
                     alert("Invalid mobile number");
                     alertBorder(inputs[i])
@@ -61,10 +64,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 for(let o = 0; o <= inputs.length; o++) {
                     if(inputs[o].name === 'middleName') {
                         continue;
-                    }
-                    if(inputs[o].value === '') {
+                    } else if(inputs[o].value === '') {
                         alertBorderAllFields(inputs[o])
                     }
+
+                    // if(inputs[o].value === '' && inputs[0].name === 'middleName') {
+                    //     alertBorderAllFields(inputs[o])
+                    // }
                 }
                 isTrue = true;
                 break;
@@ -85,7 +91,6 @@ document.addEventListener("DOMContentLoaded", function () {
             })
             .then(response => response.json())
             .then(data => {
-                console.log('data: ' + JSON.stringify(data))
                 if(data?.status >= 200 || data?.status < 300) {
 
                     // Clear form fields

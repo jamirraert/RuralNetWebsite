@@ -24,7 +24,7 @@
         box-sizing: border-box;
 
         p{
-            margin-left: 20%;
+            margin-left: 22%;
         }
     } 
     
@@ -40,7 +40,7 @@
     .form-control {
         width: calc(100% - 1.5rem);
         padding: 1rem;
-        border: 1px solid $pink-color;
+        border: 2px solid $pink-color;
         border-radius: 0.5rem;
         box-sizing: border-box;
     }
@@ -66,11 +66,19 @@
                 font-size: 1rem;
             }
             textarea{
-                height: 150px;
+                height: 14.625rem;
                 resize: none;
                 font-size: 1rem;
+                max-width: 40.875rem;
+                width: 100%;
+            }
+            .btn {
+                width: 11.125rem;
+                text-transform: uppercase;
             }
         }
+
+
 
         .spinner-parent {
             position:absolute;
@@ -195,6 +203,45 @@
             .contact-sweet-msg {
                 left: 24% !important;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .login_banner {
+        height: 100%;
+        position: relative;
+
+       .container {
+            .right {
+                position: absolute !important;
+                bottom: -81px;
+                right: 25px;
+                height: 150px;
+                width: 150px;
+            }
+       }
+    }
+
+    .contact_banner {
+        height: 40vh !important;
+        display: block !important;
+        & > p {
+            text-align: left !important;
+            line-height: 1.2;
+        }
+
+        & > p:first-child {
+            // margin-bottom: 0 !important;
+        }
+        & p:last-child {
+            font-size: 1rem !important;
+        }
+    }
+
+    .contact_content {
+        .desc {
+            p {margin: 0 auto !important}
         }
     }
 }

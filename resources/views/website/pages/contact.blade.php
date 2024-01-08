@@ -11,7 +11,7 @@
                 with your community and find out what they need.
             </p>
         </div>
-        <img src="{{ asset('images/CashKO_Hand-combine.png') }}"  class="right">
+        <img src="{{ asset('images/CashKO_Hand-combine.png') }}" id="contact-banner-img"  class="right">
     </div>
 </div>
 
@@ -41,7 +41,7 @@
                     <input type="text" class="form-control" id="email" name="email" placeholder="Email Address (required)" required>
                 </div>
                 <div class="form-group">
-                    <input type="tel" class="form-control" id="mobileNumber" name="mobileNumber" pattern="[0-9]{11}" maxlength="11" placeholder="Contact No (required)" required>
+                    <input type="tel" class="form-control" id="mobileNumber" name="mobileNumber" onkeyup="handleKeyUp(this)" pattern="[0-9]{11}" maxlength="11" placeholder="Contact No (required)" required>
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control" id="organization" name="organization" placeholder="Organization (required)" required>
@@ -153,5 +153,28 @@
         document.getElementById('myModal').style.display = 'none';
         document.getElementById('overlay').style.display = 'none';
     }
+
+    let imgBanner = document.getElementById('contact-banner-img');
+
+    window.addEventListener(`resize`, function() {
+        var href = window.location.href.split('/'),
+            uri = `${href[0]}//${href[2]}`;
+
+        if(window.innerWidth <= 480) {
+           imgBanner.src = `${uri}/images/contact-img.png`
+        }else {
+           imgBanner.src = `${uri}/images/CashKO_Hand-combine.png`
+        }
+    })
+
+
+    // remove special char and char on mobile fields
+    function handleKeyUp(inputElement) {
+        var reg = /[^0-9]/
+        var input = inputElement.value.replace(reg, '')
+        inputElement.value = input
+    }
+
+
 </script>
 @endsection
