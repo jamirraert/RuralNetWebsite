@@ -235,12 +235,30 @@
         display: block;
         .contact_msg {
             .desc {
-                margin: 0 auto 1.5rem;
+                // margin: 0 auto 1.5rem;
+                p {
+                    font-size: 20pt; width: 337px;
+                    img {
+                        right: -124px;
+                        top: 92px;
+                        width: 90px;
+                    }
+                }
             }
         }
-        .contact_info {
-            table {
-                margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .login_banner2 {
+        display: block;
+        .contact_msg {
+            .desc {
+                p {
+                    img {
+                        right: -104px;
+                    }
+                }
             }
         }
     }

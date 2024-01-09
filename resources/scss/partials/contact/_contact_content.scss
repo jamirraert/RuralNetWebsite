@@ -24,7 +24,7 @@
         box-sizing: border-box;
 
         p{
-            margin-left: 22%;
+            margin-left: 24%;
         }
     } 
     
@@ -46,7 +46,7 @@
         font-family: Arial, Helvetica, sans-serif;
     }
     .form-control::placeholder {
-        color: $primary-color;
+        color: #002B7980;
         font-family: Arial, Helvetica, sans-serif;
     }
     .txt-area::placeholder {
@@ -236,7 +236,7 @@
     }
 
     .contact_banner {
-        height: 40vh !important;
+        height: 55vh !important;
         display: block !important;
         & > p {
             text-align: left !important;
@@ -253,7 +253,7 @@
 
     .contact_content {
         .desc {
-            p {margin: 0 auto !important; text-align: left}
+            p {margin: 0 auto !important; text-align: left; font-size: 1.254rem; font-weight: 700;}
         }
     }
 }
