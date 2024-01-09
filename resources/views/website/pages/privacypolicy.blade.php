@@ -166,8 +166,8 @@
             <li class="child-desc-b">1.4 Regularly test, assess and evaluate the effectiveness of security measures.</li>
             <li class="child-desc-b">1.5 Control and limit access on digitally processed Personal Data to authorized person through encryption whether it is at rest or while in transit, employ authentication process and other technical security measure.</li>
             <li class="child-desc-b">1.6 Use of online access to process Personal Data should employ an identity authentication method that uses a unique user and password for log-in.</li>
-            <li class="child-desc-c" style="text-decoration: underline"><b>BREACH NOTIFICATION AND REPORT</b></li>
-            <li class="child-desc-c"><b>1. HOW DOES BREACH NOTIFICATION WORKS?</b></li>
+            <li class="child" style="text-decoration: underline"><b>BREACH NOTIFICATION AND REPORT</b></li>
+            <li class="child-desc-b"><b>1. HOW DOES BREACH NOTIFICATION WORKS?</b></li>
             <li class="child-desc-c">1.1 All employees, contractors, partners and providers involved in the processing of Personal Data are enjoined to report any signs of possible data breach or Security Incident. In the event that such signs are discovered, the facts and circumstances need to be reported to the DPO within twenty-four (24) covers from its discovery for the verification as to whether or not a breach that occurred requires notification under the Data Privacy Act as well as for the determination of the relevant circumstances surrounding the reported breach and/or Security Incident.</li>
             <li class="child-desc-c">1.2 For breach requiring notification, the DPO shall, within seventy – two (72) hours upon receipt of facts or circumstances, notify the National Privacy Commission and the affected Data subjects following the procedures prescribed by the DPA.</li>
             <li class="child-desc-b"><b>2. HOW DO WE DOCUMENT REPORTS ON DATA BREACH?</b></li>
@@ -176,7 +176,7 @@
             <li class="child-desc-c">b. Aggregated data of Security Incidents not involving Personal Data.
             </li>
             <li class="child-desc-b"><b>3. HOW DO WE CORRECT AND PREVENT DATA BREACHES?</b></li>
-            <li class="child-desc-b">3.1 Ransomware – is a type of malicious software from cryptovirology that threatens to publish the victim's data or perpetually block access to it unless a ransom is paid.</li>
+            <li class="child-desc-b"><b>3.1 Ransomware –</b> is a type of malicious software from cryptovirology that threatens to publish the victim's data or perpetually block access to it unless a ransom is paid.</li>
             <li class="child-desc-b" style="text-decoration: underline">Corrective Measure</li>
             <li class="child-desc-b">Recovery consists of removing the ransom Trojan and transferring data from the backup storage. If ransom Trojan cannot be removed, data will be restored from daily record backups.</li>
             <li class="child-desc-b" style="text-decoration: underline">Preventive Measure</li>
@@ -185,17 +185,17 @@
             <li class="child-desc-b">3. Orientation of users to avoid opening of suspicious attachments from unknown sender.</li>
             <li class="child-desc-b">4. Up-to-date operating systems, antivirus and other software.</li>
             <li class="child-desc-b">5. Browser add-on to block pop-ups.</li>
-            <li class="child-desc-b"> 3.2 Password attacks – Password attacks are combination of brute force attacks that are used to       	gain access to insecure passwords. A hacker uses a program that tries multiple passwords to get 	access to a user’s data until a password work. </li>
+            <li class="child-desc-b"> 3.2 <b>Password attacks –</b> Password attacks are combination of brute force attacks that are used to       	gain access to insecure passwords. A hacker uses a program that tries multiple passwords to get 	access to a user’s data until a password work. </li>
             <li class="child-desc-b" style="text-decoration: underline">Corrective Measure</li>
             <li class="child-desc-b">Restore a backup for the domain server.  A change password will be administered by the IT Administrator to users affected by the breach.</li>
             <li class="child-desc-b" style="text-decoration: underline">Preventive Measure</li>
             <li class="child-desc-b">1. Login Password Retry Lockout</li>
             <li class="child-desc-b">The ASA (firewall) allows an administrator to lock out a local user account after set of unsuccessful login attempts. Once a user is locked out, the account is locked until the administrator unlocks it.</li>
             <li class="child-desc-b">Authorized users can lock themselves out of a device if the number of unsuccessful login attempts is reached. In addition, a malicious user can create a denial of service (DoS) condition with repeated attempts to authenticate with a valid username.</li>
-            <li class="child-desc-b"> 3.3 Phishing – Email or phone calls that seem official to gain access or personal information is 	called phishing. They frequently take the guise of known, credible entities—such as a person’s 	bank. Various levels of misrepresentation to outright deception are employed to defraud or gain 	information.</li>
+            <li class="child-desc-b"> 3.3 <b>Phishing –</b> Email or phone calls that seem official to gain access or personal information is 	called phishing. They frequently take the guise of known, credible entities—such as a person’s 	bank. Various levels of misrepresentation to outright deception are employed to defraud or gain 	information.</li>
             <li class="child-desc-b" style="text-decoration: underline">Corrective Measure</li>
             <li class="child-desc-b">1.  Immediate disconnection of the device from the internet.</li>
-            <li class="child-desc-b">A ransom ware will be installed on the computer and will be placed offline.</li>
+            <li class="child-desc-b">A ransomware will be installed on the computer and will be placed offline.</li>
             <li class="child-desc-b">For wired connections, the internet cable from the computer will be unplugged and Wi-Fi networks will be disconnected.</li>
             <li class="child-desc-b">2. Change RuralNet account credentials.</li>
             <li class="child-desc-b">Change passwords for all online accounts must be done, especially email, online banking, and           social media, and do it from a clean computer.</li>
@@ -216,13 +216,13 @@
             <li class="child-desc-b" style="text-decoration: underline"><b>MONITORING AND ENFORCEMENT </b></li>
             <li class="child-desc-b">To monitor compliance with this policy and to identify area for improvement in response inquiries and /or complaints regarding  	Personally Identifiable Information (PII) that is subject to this policy, the following shall be observed:</li>
             <li class="child-desc-b">1. Regularly test and verify management of Personal Data consistent with this policy.</li>
-            <li class="child-desc-b">2. Supervise third part compliance with contractual obligations relating to data privacy.</li>
+            <li class="child-desc-b">2. Supervise third party compliance with contractual obligations relating to data privacy.</li>
             <li class="child-desc-b">3. Periodic conduct of risk-assessment process that includes follow-up procedures to verify accuracy of privacy practices and controls implemented by concerned organizational unit and/or employees, partners, contractors and third party providers.</li>
             <li class="child-desc-b">4. Monitor corrections or improvements to deficiencies in control or policies to verify that compliance finding are addressed in a timely manner.</li>
             <li class="child-desc-b">5. Handle privacy concerns, issues or complains reported by data subjects in a timely manner. Privacy complaints and action steps taken will be documented and corrective actions reviewed for patterns and root causes.</li>
             <li class="child-desc-b">6. Train al employees to recognize and report potential privacy event, provide awareness on the importance of reporting any possible privacy event in a timely manner.</li>
             <li class="child-desc-b">A current version of this document is shared to all members of staff under RuralNet.</li>
-            <li class="child-desc-b" style="text-decoration: underline"><b>ROLES AND RESPONSIBILITIES:</b></li>
+            <li class="lead" style="text-decoration: underline"><b>ROLES AND RESPONSIBILITIES:</b></li>
             <li class="child-desc-c">1. Legal 
                 The Legal Counsel will provide needed legal support related to the privacy, which include among others:
                 </li>
