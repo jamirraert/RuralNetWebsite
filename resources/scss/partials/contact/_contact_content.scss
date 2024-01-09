@@ -43,6 +43,20 @@
         border: 2px solid $pink-color;
         border-radius: 0.5rem;
         box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .form-control::placeholder {
+        color: $primary-color;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .txt-area::placeholder {
+        // font-weight:lighter !important;
+        // font-size: 18px;
+        font-size: 17px;
+    }
+    .txt-area {
+        font-size: 17px;
+        font-weight: normal;
     }
 
     p{
@@ -67,8 +81,6 @@
             }
             textarea{
                 height: 14.625rem;
-                resize: none;
-                font-size: 1rem;
                 max-width: 40.875rem;
                 width: 100%;
             }
@@ -241,7 +253,7 @@
 
     .contact_content {
         .desc {
-            p {margin: 0 auto !important}
+            p {margin: 0 auto !important; text-align: left}
         }
     }
 }

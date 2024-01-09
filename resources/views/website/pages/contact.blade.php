@@ -41,13 +41,13 @@
                     <input type="text" class="form-control" id="email" name="email" placeholder="Email Address (required)" required>
                 </div>
                 <div class="form-group">
-                    <input type="tel" class="form-control" id="mobileNumber" name="mobileNumber" onkeyup="handleKeyUp(this)" pattern="[0-9]{11}" maxlength="11" placeholder="Contact No (required)" required>
+                    <input type="tel" class="form-control" id="mobileNumber" name="mobileNumber" onkeyup="handleKeyUp(this)" pattern="[0-9]{11}" maxlength="11" placeholder="ex. 09xxxxxxxxx (required)" required>
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control" id="organization" name="organization" placeholder="Organization (required)" required>
                 </div>
                 <div class="form-group">
-                    <textarea id="reasonForContacting" class="form-control" name="reasonForContacting" rows="4" placeholder="Reason for contacting RuralNet (required)" required></textarea>
+                    <textarea id="reasonForContacting" class="form-control txt-area" name="reasonForContacting" rows="4" placeholder="Reason for contacting RuralNet (required)" required></textarea>
                 </div>
             
                 <div class="form-group">
@@ -88,15 +88,15 @@
                     </tr>
                     <tr>
                         <td class='info_h'>Globe</td>
-                        <td><span style="color: rgb(255,255,255)">:&nbsp;028 876 1428</span></td>
+                        <td><span style="color: rgb(255,255,255)">:&nbsp;0&zwnj;28 87&zwnj;6 14&zwnj;28</span></td>
                     </tr>
                     <tr>
                         <td class='info_h'>PLDT</td>
-                        <td><span style="color: rgb(255,255,255)">:&nbsp;032 342 7826</span></td>
+                        <td><span style="color: rgb(255,255,255)">:&nbsp;0&zwnj;32 34&zwnj;2 78&zwnj;26</span></td>
                     </tr>
                     <tr>
                         <td class='info_h'>Toll-Free</td>
-                        <td><span style="color: rgb(255,255,255)">:&nbsp;1800 1320 0211</span></td>
+                        <td><span style="color: rgb(255,255,255)">:&nbsp;18&zwnj;00 13&zwnj;20 02&zwnj;11</span></td>
                     </tr>
                 </table> 
         </div>

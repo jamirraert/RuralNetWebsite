@@ -54,6 +54,9 @@
                 justify-content: space-around;
                 padding: 2rem;
                 width: 85%;
+                p:first-child {
+                    font-size: 1.6720rem;
+                }
                 & > p {
                     padding: 0 !important;
                     text-align: center;
