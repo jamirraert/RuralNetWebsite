@@ -45,7 +45,7 @@
                     CashKO provides microinsurance solutions that 
                     focus on fast claims processing with high approval rates.
                 </p>
-                <button class='btn-primary' onclick="redirect('micro.insurance-cashko.com')">LEARN MORE</button>
+                <button class='btn-primary' onclick="redirect('micro.cashko-insurance.com')">LEARN MORE</button>
             </div>
            
         </div>
