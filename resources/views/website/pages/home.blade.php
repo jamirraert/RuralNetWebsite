@@ -6,7 +6,7 @@
         <img src="{{ asset('images/ruralnet-banner-left.png') }}" id="banner_left_img">
         <div id="banner_main">
             <p id="banner_header">
-                Making insurance accessible to all Filipinosssssssss
+                Making insurance accessible to all Filipinos
                 <img src="{{ asset('images/CashKO_Accent-3.png') }}" id="underline">
             </p>
             <p id="banner_content">
