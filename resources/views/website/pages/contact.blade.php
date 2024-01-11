@@ -11,7 +11,7 @@
                 with your community and find out what they need.
             </p>
         </div>
-        <img src="{{ asset('images/CashKO_Hand-combine.png') }}" id="contact-banner-img"  class="right">
+        <img src="{{ asset('images/contact-img.png') }}" class="right">
     </div>
 </div>
 
@@ -29,13 +29,13 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name (required)" required>
+                    <input type="text" class="form-control" id="firstName" name="firstName" onkeyup="removeInteger(this)" placeholder="First Name (required)" required>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="middleName" name="middleName" placeholder="Middle Name (optional)" required>
+                    <input type="text" class="form-control" id="middleName" name="middleName" onkeyup="removeInteger(this)" placeholder="Middle Name (optional)" required>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name (required)" required>
+                    <input type="text" class="form-control" id="lastName" name="lastName" onkeyup="removeInteger(this)" placeholder="Last Name (required)" required>
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control" id="email" name="email" placeholder="Email Address (required)" required>
@@ -154,23 +154,17 @@
         document.getElementById('overlay').style.display = 'none';
     }
 
-    let imgBanner = document.getElementById('contact-banner-img');
-
-    window.addEventListener(`resize`, function() {
-        var href = window.location.href.split('/'),
-            uri = `${href[0]}//${href[2]}`;
-
-        if(window.innerWidth <= 480) {
-           imgBanner.src = `${uri}/images/contact-img.png`
-        }else {
-           imgBanner.src = `${uri}/images/CashKO_Hand-combine.png`
-        }
-    })
-
 
     // remove special char and char on mobile fields
     function handleKeyUp(inputElement) {
         var reg = /[^0-9]/
+        var input = inputElement.value.replace(reg, '')
+        inputElement.value = input
+    }
+
+    // remove special char and char on mobile fields
+    function removeInteger(inputElement) {
+        var reg = /[^a-zA-Z]/
         var input = inputElement.value.replace(reg, '')
         inputElement.value = input
     }

@@ -25,6 +25,8 @@
 
         p{
             margin-left: 24%;
+            font-size: 1.563rem;
+            font-weight: 700;
         }
     } 
     
@@ -236,7 +238,6 @@
     }
 
     .contact_banner {
-        height: 55vh !important;
         display: block !important;
         & > p {
             text-align: left !important;
@@ -248,6 +249,7 @@
         }
         & p:last-child {
             font-size: 1rem !important;
+            margin-bottom: 5rem !important;
         }
     }
 
