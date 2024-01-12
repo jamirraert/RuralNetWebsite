@@ -152,3 +152,9 @@
     }
     
 }
+
+@media screen and (max-width: 390px) {
+    .insurance_use_cases_contents .container .accordion .accordion-item {
+        border-radius: 15px;
+    }
+}

@@ -56,3 +56,11 @@
         }
     }
 }
+
+@media screen and (max-width: 390px) {
+    .insurance_send_message {
+        .container {
+            div {margin: 2rem !important}
+        }
+    }
+}

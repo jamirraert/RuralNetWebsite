@@ -134,3 +134,12 @@ footer {
     }
     
 }
+
+@media screen and (max-width: 480px) {
+    footer {
+        ul li {
+            padding: .4em;
+            width: 100%;
+        }
+    }
+}

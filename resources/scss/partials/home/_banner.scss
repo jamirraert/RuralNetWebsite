@@ -101,8 +101,9 @@
 
 @media screen and (max-width: 1900px) {
     .banner{
-        height: 60vh;
+        height: 100%;
         .container{
+            height: 60vh;
             #banner_main{
                 
                 height: 50vh; // modified
@@ -519,6 +520,20 @@
         }
     }
     
+}
+
+@media screen and (max-width: 480px) {
+    .banner {
+        .container {
+            height: 100vh;
+            #banner_left_img {
+                top: -3rem;
+            }
+            #banner_right_img {
+                top: 41rem;
+            }
+        }
+    }
 }
 
 
