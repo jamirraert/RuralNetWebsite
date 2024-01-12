@@ -226,11 +226,11 @@
             <li class="child-desc-c">1. Legal 
                 The Legal Counsel will provide needed legal support related to the privacy, which include among others:
                 </li>
-            <li class="child-desc-c">a. Interpretations of legal requirements related to privacy.</li>
-            <li class="child-desc-c">b. Advise the DPO on exception request for the privacy policy.</li>
-            <li class="child-desc-c">c. Review agreements for third party disclosures of Personal Data about employees, field staff, customers, contractors, vendors and third parties.</li>
-            <li class="child-desc-c">Advice and support negotiation and drafting of appropriate privacy language for agreements with Third Parties.</li>
-            <li class="child-desc-b"><b>Human Resource</b></li>
+            <li class="child-desc-d">a. Interpretations of legal requirements related to privacy.</li>
+            <li class="child-desc-d">b. Advise the DPO on exception request for the privacy policy.</li>
+            <li class="child-desc-d">c. Review agreements for third party disclosures of Personal Data about employees, field staff, customers, contractors, vendors and third parties.</li>
+            <li class="child-desc-d">Advice and support negotiation and drafting of appropriate privacy language for agreements with Third Parties.</li>
+            <li class="child-desc-c"><b>Human Resource</b></li>
             <li class="child-desc-c">a. The HR will support the effective implementation of this policy through the following initiatives:</li>
             <li class="child-desc-c">b. Organized (logistics, schedule, attendance of participants) training and awareness campaign on privacy policies and business requirements with the support from the Data Privacy Office of RuralNet for all employees especially those who are directly engaged in the processing of personal data.</li>
             <li class="child-desc-c">b. Seek the advice of the DPO in establishing privacy accountability within RuralNet and communicating appropriate disciplinary guidelines.</li>
