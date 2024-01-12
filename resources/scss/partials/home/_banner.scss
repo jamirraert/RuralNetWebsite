@@ -103,7 +103,7 @@
     .banner{
         height: 100%;
         .container{
-            height: 60vh;
+            height: 100vh;
             #banner_main{
                 
                 height: 50vh; // modified
@@ -137,9 +137,8 @@
 @media screen and (max-width: 1600px) {
     .banner{
         .container{
-      
             #banner_main{
-                height: 50vh; // modified
+                height: 73vh !important; // modified
                 width: 550px; // modified
                 margin-top: 10rem; // modified
                 text-align: center;
