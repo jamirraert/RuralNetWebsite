@@ -29,13 +29,13 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="firstName" name="firstName" onkeyup="removeInteger(this)" placeholder="First Name (required)" required>
+                    <input type="text" class="form-control" id="firstName" name="firstName" onkeyup="removeInteger(this)" onblur="removeHoldingNumber(this)" placeholder="First Name (required)" required>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="middleName" name="middleName" onkeyup="removeInteger(this)" placeholder="Middle Name (optional)" required>
+                    <input type="text" class="form-control" id="middleName" name="middleName" onkeyup="removeInteger(this)" onblur="removeHoldingNumber(this)" placeholder="Middle Name (optional)" required>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="lastName" name="lastName" onkeyup="removeInteger(this)" placeholder="Last Name (required)" required>
+                    <input type="text" class="form-control" id="lastName" name="lastName" onkeyup="removeInteger(this)" onblur="removeHoldingNumber(this)" placeholder="Last Name (required)" required>
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control" id="email" name="email" placeholder="Email Address (required)" required>
@@ -165,6 +165,12 @@
     // remove special char and char on mobile fields
     function removeInteger(inputElement) {
         var reg = /[^a-zA-Z]/
+        var input = inputElement.value.replace(reg, '')
+        inputElement.value = input
+    }
+
+    function removeHoldingNumber(inputElement) {
+        var reg = /[0-9]/g;
         var input = inputElement.value.replace(reg, '')
         inputElement.value = input
     }
