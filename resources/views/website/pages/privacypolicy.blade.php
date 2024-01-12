@@ -177,42 +177,42 @@
             </li>
             <li class="child-desc-b"><b>3. HOW DO WE CORRECT AND PREVENT DATA BREACHES?</b></li>
             <li class="child-desc-c"><b>3.1 Ransomware –</b> is a type of malicious software from cryptovirology that threatens to publish the victim's data or perpetually block access to it unless a ransom is paid.</li>
-            <li class="child-desc-c" style="text-decoration: underline">Corrective Measure</li>
-            <li class="child-desc-c">Recovery consists of removing the ransom Trojan and transferring data from the backup storage. If ransom Trojan cannot be removed, data will be restored from daily record backups.</li>
-            <li class="child-desc-c" style="text-decoration: underline">Preventive Measure</li>
-            <li class="child-desc-c">1. Daily backup of data base, application, domain server.</li>
-            <li class="child-desc-c">2. Enable and personalize anti-spam settings.</li>
-            <li class="child-desc-c">3. Orientation of users to avoid opening of suspicious attachments from unknown sender.</li>
-            <li class="child-desc-c">4. Up-to-date operating systems, antivirus and other software.</li>
-            <li class="child-desc-c">5. Browser add-on to block pop-ups.</li>
+            <li class="child-desc-d" style="text-decoration: underline">Corrective Measure</li>
+            <li class="child-desc-d">Recovery consists of removing the ransom Trojan and transferring data from the backup storage. If ransom Trojan cannot be removed, data will be restored from daily record backups.</li>
+            <li class="child-desc-d" style="text-decoration: underline">Preventive Measure</li>
+            <li class="child-desc-d">1. Daily backup of data base, application, domain server.</li>
+            <li class="child-desc-d">2. Enable and personalize anti-spam settings.</li>
+            <li class="child-desc-d">3. Orientation of users to avoid opening of suspicious attachments from unknown sender.</li>
+            <li class="child-desc-d">4. Up-to-date operating systems, antivirus and other software.</li>
+            <li class="child-desc-d">5. Browser add-on to block pop-ups.</li>
             <li class="child-desc-c"> <b>3.2 Password attacks –</b> Password attacks are combination of brute force attacks that are used to       	gain access to insecure passwords. A hacker uses a program that tries multiple passwords to get 	access to a user’s data until a password work. </li>
-            <li class="child-desc-c" style="text-decoration: underline">Corrective Measure</li>
-            <li class="child-desc-c">Restore a backup for the domain server.  A change password will be administered by the IT Administrator to users affected by the breach.</li>
-            <li class="child-desc-c" style="text-decoration: underline">Preventive Measure</li>
-            <li class="child-desc-c">1. Login Password Retry Lockout</li>
-            <li class="child-desc-c">The ASA (firewall) allows an administrator to lock out a local user account after set of unsuccessful login attempts. Once a user is locked out, the account is locked until the administrator unlocks it.</li>
-            <li class="child-desc-c">Authorized users can lock themselves out of a device if the number of unsuccessful login attempts is reached. In addition, a malicious user can create a denial of service (DoS) condition with repeated attempts to authenticate with a valid username.</li>
+            <li class="child-desc-d" style="text-decoration: underline">Corrective Measure</li>
+            <li class="child-desc-d">Restore a backup for the domain server.  A change password will be administered by the IT Administrator to users affected by the breach.</li>
+            <li class="child-desc-d" style="text-decoration: underline">Preventive Measure</li>
+            <li class="child-desc-d">1. Login Password Retry Lockout</li>
+            <li class="child-desc-d">The ASA (firewall) allows an administrator to lock out a local user account after set of unsuccessful login attempts. Once a user is locked out, the account is locked until the administrator unlocks it.</li>
+            <li class="child-desc-d">Authorized users can lock themselves out of a device if the number of unsuccessful login attempts is reached. In addition, a malicious user can create a denial of service (DoS) condition with repeated attempts to authenticate with a valid username.</li>
             <li class="child-desc-c"> <b>3.3 Phishing –</b> Email or phone calls that seem official to gain access or personal information is 	called phishing. They frequently take the guise of known, credible entities—such as a person’s 	bank. Various levels of misrepresentation to outright deception are employed to defraud or gain 	information.</li>
-            <li class="child-desc-b" style="text-decoration: underline">Corrective Measure</li>
-            <li class="child-desc-b">1.  Immediate disconnection of the device from the internet.</li>
-            <li class="child-desc-b">A ransomware will be installed on the computer and will be placed offline.</li>
-            <li class="child-desc-b">For wired connections, the internet cable from the computer will be unplugged and Wi-Fi networks will be disconnected.</li>
-            <li class="child-desc-b">2. Change RuralNet account credentials.</li>
-            <li class="child-desc-b">Change passwords for all online accounts must be done, especially email, online banking, and           social media, and do it from a clean computer.</li>
-            <li class="child-desc-b">It’s also critical to use different passwords for each account to make it difficult for cyber criminals to steal identity.
+            <li class="child-desc-d" style="text-decoration: underline">Corrective Measure</li>
+            <li class="child-desc-d">1.  Immediate disconnection of the device from the internet.</li>
+            <li class="child-desc-d">A ransomware will be installed on the computer and will be placed offline.</li>
+            <li class="child-desc-d">For wired connections, the internet cable from the computer will be unplugged and Wi-Fi networks will be disconnected.</li>
+            <li class="child-desc-d">2. Change RuralNet account credentials.</li>
+            <li class="child-desc-d">Change passwords for all online accounts must be done, especially email, online banking, and           social media, and do it from a clean computer.</li>
+            <li class="child-desc-d">It’s also critical to use different passwords for each account to make it difficult for cyber criminals to steal identity.
             </li>
-            <li class="child-desc-b">3. Scan systems for malware
+            <li class="child-desc-d">3. Scan systems for malware
             </li>
-            <li class="child-desc-b">After changing passwords, will run a complete anti-malware scan of the system to get rid of self-replicating malware that could spread to the network and the devices connected to it.</li>
-            <li class="child-desc-b">Key points to remember:</li>
-            <li class="child-desc-b">Scan using offline software
+            <li class="child-desc-d">After changing passwords, will run a complete anti-malware scan of the system to get rid of self-replicating malware that could spread to the network and the devices connected to it.</li>
+            <li class="child-desc-d">Key points to remember:</li>
+            <li class="child-desc-d">Scan using offline software
                 Run a second scan using a different program
                 No program should run if scanning is not completed. </li>
-            <li class="child-desc-b"><b>Prevention:</b></li>
-            <li class="child-desc-b">1. Orientation to employees on phishing incidents.</li>
-            <li class="child-desc-b">2. Installation of latest security patches and updates for all system.</li>
-            <li class="child-desc-b">3. Deployment of SPAM filters to detect viruses and blank senders.</li>
-            <li class="child-desc-b">4. Deployment of web filter to block malicious websites</li>
+            <li class="child-desc-d"><b>Prevention:</b></li>
+            <li class="child-desc-d">1. Orientation to employees on phishing incidents.</li>
+            <li class="child-desc-d">2. Installation of latest security patches and updates for all system.</li>
+            <li class="child-desc-d">3. Deployment of SPAM filters to detect viruses and blank senders.</li>
+            <li class="child-desc-d">4. Deployment of web filter to block malicious websites</li>
             <li class="child" style="text-decoration: underline"><b>MONITORING AND ENFORCEMENT </b></li>
             <li class="child-desc-b">To monitor compliance with this policy and to identify area for improvement in response inquiries and /or complaints regarding  	Personally Identifiable Information (PII) that is subject to this policy, the following shall be observed:</li>
             <li class="child-desc-b">1. Regularly test and verify management of Personal Data consistent with this policy.</li>
@@ -223,24 +223,23 @@
             <li class="child-desc-b">6. Train al employees to recognize and report potential privacy event, provide awareness on the importance of reporting any possible privacy event in a timely manner.</li>
             <li class="child-desc-b">A current version of this document is shared to all members of staff under RuralNet.</li>
             <li class="child" style="text-decoration: underline"><b>ROLES AND RESPONSIBILITIES:</b></li>
-            <li class="child-desc-c">1. Legal 
-                The Legal Counsel will provide needed legal support related to the privacy, which include among others:
-                </li>
+            <li class="child-desc-c"><b>1. Legal</b></li>
+            <li class="child-desc-d">The Legal Counsel will provide needed legal support related to the privacy, which include among others:</li>
             <li class="child-desc-d">a. Interpretations of legal requirements related to privacy.</li>
             <li class="child-desc-d">b. Advise the DPO on exception request for the privacy policy.</li>
             <li class="child-desc-d">c. Review agreements for third party disclosures of Personal Data about employees, field staff, customers, contractors, vendors and third parties.</li>
-            <li class="child-desc-d">Advice and support negotiation and drafting of appropriate privacy language for agreements with Third Parties.</li>
-            <li class="child-desc-c"><b>Human Resource</b></li>
-            <li class="child-desc-c">a. The HR will support the effective implementation of this policy through the following initiatives:</li>
-            <li class="child-desc-c">b. Organized (logistics, schedule, attendance of participants) training and awareness campaign on privacy policies and business requirements with the support from the Data Privacy Office of RuralNet for all employees especially those who are directly engaged in the processing of personal data.</li>
-            <li class="child-desc-c">b. Seek the advice of the DPO in establishing privacy accountability within RuralNet and communicating appropriate disciplinary guidelines.</li>
-            <li class="child-desc-c">c. Evaluate significant changes to existing process related to handling of employees’ Personal Data in coordination with the DPO and Legal Counsel.</li>
-            <li class="child-desc-b"><b>3. Operations and Business Departments </b></li>
-            <li class="child-desc-b">Ensure compliance to this data privacy policy through the following activities among others:</li>
-            <li class="child-desc-c">a. Verify data subject identity to make sure that PII and SPI is shared only with legitimate data subject or authorized representative.</li>
-            <li class="child-desc-c">b. Establish and implement rules for appropriate sharing of Personal Data with callers</li>
-            <li class="child-desc-c">c. Recognize privacy events which represent a potential breach of Personal Data privacy and report promptly to the department head.</li>
-            <li class="child-desc-c">d. Require privacy training as recommended by the Data Privacy Office to ensure that each employee has knowledge and understanding of the responsibility of RuralNet to protect Personal Data under its custody and control, the general requirements of this Data Privacy Policy and the significance that data privacy breaches may have to the brand and reputation of RuralNet.</li>
+            <li class="child-desc-d">d. Advice and support negotiation and drafting of appropriate privacy language for agreements with Third Parties.</li>
+            <li class="child-desc-c"><b>2. Human Resource</b></li>
+            <li class="child-desc-d">a. The HR will support the effective implementation of this policy through the following initiatives:</li>
+            <li class="child-desc-d">b. Organized (logistics, schedule, attendance of participants) training and awareness campaign on privacy policies and business requirements with the support from the Data Privacy Office of RuralNet for all employees especially those who are directly engaged in the processing of personal data.</li>
+            <li class="child-desc-d">c. Seek the advice of the DPO in establishing privacy accountability within RuralNet and communicating appropriate disciplinary guidelines.</li>
+            <li class="child-desc-d">d. Evaluate significant changes to existing process related to handling of employees’ Personal Data in coordination with the DPO and Legal Counsel.</li>
+            <li class="child-desc-c"><b>3. Operations and Business Departments </b></li>
+            <li class="child-desc-d">Ensure compliance to this data privacy policy through the following activities among others:</li>
+            <li class="child-desc-d">a. Verify data subject identity to make sure that PII and SPI is shared only with legitimate data subject or authorized representative.</li>
+            <li class="child-desc-d">b. Establish and implement rules for appropriate sharing of Personal Data with callers</li>
+            <li class="child-desc-d">c. Recognize privacy events which represent a potential breach of Personal Data privacy and report promptly to the department head.</li>
+            <li class="child-desc-d">d. Require privacy training as recommended by the Data Privacy Office to ensure that each employee has knowledge and understanding of the responsibility of RuralNet to protect Personal Data under its custody and control, the general requirements of this Data Privacy Policy and the significance that data privacy breaches may have to the brand and reputation of RuralNet.</li>
          </ul>
     </div>
 </div>  
