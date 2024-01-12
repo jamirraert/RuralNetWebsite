@@ -53,7 +53,7 @@
             <div>
                 <img src="{{ asset('images/CashKo-Primary-Descriptor-FW-01.png') }}">
                 <p>
-                    CashKO works with underserved SMEs to develope comprehensive 
+                    CashKO works with underserved SMEs to develop comprehensive 
                     insurance plans that can help businesses grow at scale.
                 </p>
                 <button class='btn_blue' onclick="redirect('cashko-insurance.com')">LEARN MORE</button>
