@@ -156,5 +156,21 @@
 @media screen and (max-width: 390px) {
     .insurance_use_cases_contents .container .accordion .accordion-item {
         border-radius: 15px;
+        .accordion-title p{font-weight: 600 !important}
+    }
+    .insurance_use_cases_contents .container .accordion {
+        #accordion-item1 > div:not(:last-child) {
+            font-size: 0.85rem !important;
+        }
+        #accordion-item1 #acd3 {
+            position: relative;
+            img {
+                aspect-ratio: 1/1;
+                width: 28%;
+                position: absolute !important;
+                top: -36px;
+                right: -14px;
+            }
+        }
     }
 }

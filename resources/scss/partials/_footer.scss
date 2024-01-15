@@ -108,7 +108,7 @@ footer {
     }
 
     ul {
-        margin: 0;
+        margin: 0 0 0 1.6em;
         padding: 0;
         list-style: none;
         li {
@@ -137,6 +137,7 @@ footer {
 
 @media screen and (max-width: 480px) {
     footer {
+        ul {padding: 2rem;  height: 20vh; margin: 0 !important}
         ul li {
             padding: .4em;
             width: 100%;
