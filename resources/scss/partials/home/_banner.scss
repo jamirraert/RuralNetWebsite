@@ -522,15 +522,48 @@
     
 }
 
+@media screen and (max-width: 602px) {
+    .banner {
+        .container {
+            #banner_left_img {
+                top: -1rem;
+            }
+            #banner_right_img {
+                right: -1rem;
+                top: 41rem;
+                height: 17rem;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 480px) {
     .banner {
         .container {
             height: 100vh;
             #banner_left_img {
-                top: -3rem;
+                top: -2rem;
+                left: -153px;
+                height: 25rem;
+            }
+            #banner_main {
+                margin: 400px auto 0;
+                #banner_header, #banner_content {
+                    margin-bottom: 1rem !important;
+                    #underline {
+                        width: 11.5rem;
+                        top: 6rem;
+                        left: 2rem;
+                    }
+                }
+                #banner_header {
+                    font-size: 36px !important;
+                }
             }
             #banner_right_img {
                 top: 41rem;
+                right: -1rem;
+                
             }
         }
     }

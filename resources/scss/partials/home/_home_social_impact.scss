@@ -96,6 +96,16 @@
             }
             #right{
                 padding: 0rem 2rem 3rem 2rem;
+                margin-top: 15px !important;
+                div {
+                    ul li:first-child {
+                        padding-right: 50px;
+                    }
+                    img {
+                        top: -3.5rem;
+                        right: 0rem;
+                    }
+                }
             }
         }
     }
