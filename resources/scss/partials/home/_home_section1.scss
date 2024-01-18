@@ -29,10 +29,12 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 602px) {
     .section1{
+        background: $white-color;
         .container{
             display: inline-block;
+            margin-bottom: 4.8rem;
             
             .section_left {
                 padding:3rem 2rem 0 2rem;        
