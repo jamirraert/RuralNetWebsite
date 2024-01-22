@@ -536,6 +536,17 @@
         }
     }
 }
+// @media screen and (max-height: 844px) {
+//     .banner {
+//         .container {
+//             #banner_right_img {
+//                 top: 38rem !important;
+//                 right: -1rem !important;
+//                 height: 19rem !important;
+//             }
+//         }
+//     }
+// }
 
 @media screen and (max-width: 480px) {
     .banner {
@@ -543,27 +554,29 @@
             height: 100vh;
             #banner_left_img {
                 top: -2rem;
-                left: -153px;
-                height: 25rem;
+                left: -144px;
+                height: 23rem;
             }
             #banner_main {
-                margin: 400px auto 0;
+                margin: 360px auto 0;
                 #banner_header, #banner_content {
                     margin-bottom: 1rem !important;
                     #underline {
                         width: 11.5rem;
-                        top: 6rem;
+                        top: 4.4rem;
                         left: 2rem;
                     }
                 }
                 #banner_header {
-                    font-size: 36px !important;
+                    font-size: 36px!important;
+                    line-height: 1.1;
                 }
             }
             #banner_right_img {
-                top: 41rem;
+                top: 36rem;
                 right: -1rem;
-                
+                height: 13rem;
+                aspect-ratio: 1;
             }
         }
     }
