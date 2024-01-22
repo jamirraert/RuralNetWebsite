@@ -6,6 +6,7 @@ nav
     z-index: 10;
     display: grid;
     place-items: center;
+    top: 0;
     
     .container{
         background-color: $white-color;

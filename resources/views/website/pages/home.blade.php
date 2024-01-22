@@ -1,7 +1,7 @@
 @extends('website.layout.ruralnet')
 
 @section('content')
-<div class="banner">
+{{-- <div class="banner">
     <div class="container">
         <img src="{{ asset('images/ruralnet-banner-left.png') }}" id="banner_left_img">
         <div id="banner_main">
@@ -16,6 +16,20 @@
             <button class='btn_big' onclick="scrollToSection()">LEARN MORE</button>    
         </div>
         <img src="{{ asset('images/ruralnet-banner-right.png') }}" id="banner_right_img">
+    </div>
+</div> --}}
+<div class="container">
+    <div class="banner">
+        <img src="{{ asset('images/ruralnet-banner-left.png') }}" alt="" class="left">
+        <img src="{{ asset('images/ruralnet-banner-right.png') }}" class="right">
+        <div class="banner-content">
+            <div class="underline">
+                <img src="{{ asset('images/CashKO_Accent-3.png') }}" alt="" class="underline">
+                <h1>Making insurance accessible to all Filipinos</h1>
+            </div>
+            <p>We provide the Philippines` first fully digital & API-driven insurance distribution & claims management platform.</p>
+            <button class="btn btn-orange">LEARN MORE</button>                
+        </div>
     </div>
 </div>
 

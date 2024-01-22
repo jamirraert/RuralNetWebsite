@@ -100,8 +100,7 @@
             #insurance{
                 div{
                     width: 19rem;
-                    margin:auto;
-                    margin-bottom: 2rem;
+                    margin:0 auto 2rem;
                 }
             }
 
@@ -117,10 +116,25 @@
             #micro,
             #financial,
             #insurance{
+                margin-bottom: 0 !important;
                 div{
                     width: 100%;
                     padding: 10px !important;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    max-width: 19rem !important;
+                    p {
+                        height: auto !important;
+                        display: inline-block;
+                    }
+                    img, p, button {
+                        margin-top: 0;
+                        margin-bottom: 1.5rem;
+                    }
                 }
+                
             }
 
             #micro{

@@ -29,21 +29,26 @@
     }
 }
 
-@media screen and (max-width: 602px) {
+@media screen and (max-width: 659px) {
+    .section1 .container {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 603px) {
     .section1{
         background: $white-color;
         .container{
             display: inline-block;
-            margin-bottom: 4.8rem;
             
             .section_left {
-                padding: 2rem 4rem;
+                padding: 2rem;
                 font-size: 1.5rem;        
             }
 
             .section_right {
                 font-size: 1rem;
-                padding: 0rem 4rem 3rem        
+                padding: 0rem 2rem 2rem;        
             }
         }
     }
