@@ -663,7 +663,8 @@
     z-index: 2;
 }
 
-.banner-content button {
+.banner-content a {
+    text-decoration: none;
     font-size: large;
     text-transform: uppercase;
     color: #002b79;
@@ -712,7 +713,7 @@
         left: 32px;
         max-width: 204px;
     }
-    .banner-content .btn {
+    .banner-content a {
         font-size: medium;
         padding: 1rem 1.5rem;
     }

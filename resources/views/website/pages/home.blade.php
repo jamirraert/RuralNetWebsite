@@ -28,14 +28,14 @@
                 <h1>Making insurance accessible to all Filipinos</h1>
             </div>
             <p>We provide the Philippines` first fully digital & API-driven insurance distribution & claims management platform.</p>
-            <button class="btn btn-orange">LEARN MORE</button>                
+            <a href="#section1">LEARN MORE</a>                
         </div>
     </div>
 </div>
 
 <!----------------------------- end of banner --------------------->
 
-<div class="section1">
+<div class="section1" id="section1">
     <div class="container" id="section1_learn_more">
         <p class="section_left">    
             RuralNet is an Insurance Technology company that seeks to give every Filipino access to affordable insurance.
@@ -50,7 +50,7 @@
 </div>
 <!----------------------------- end of section1 --------------------->
 
-<div class="home_cards">
+<div class="home_cards" id="home_card">
     <div class="container">
         <div id="micro">
             <div>
